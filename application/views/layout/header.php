@@ -10,26 +10,26 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>" />
     <!-- fontawesome icon  -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/fontawesome.min.css'); ?>" />
     <!-- flaticon css -->
-    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/fonts/flaticon.css'); ?>" />
     <!-- animate.css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/animate.css'); ?>" />
     <!-- magnific popup -->
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/modal-video.min.css'); ?>" />
     <!-- slick css -->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/slick.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/slick-theme.css'); ?>" />
     <!-- toastr js -->
-    <link rel="stylesheet" href="assets/css/toastr.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/toastr.min.css'); ?>" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>" />
     <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>" />
     <!-- custom css -->
-    <link rel="stylesheet" href="<?= base_url('public_test/css/custom_test.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/css/custom.css'); ?>" />
 </head>
 
 <body>

@@ -10,7 +10,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <!-- preloader begin-->
 <div class="preloader">
-    <img src="assets/img/tenor.gif" alt="">
+    <img src="<?= base_url('assets/img/tenor.gif'); ?>" alt="">
 </div>
 <!-- preloader end -->
 
@@ -32,8 +32,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                             <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center justify-content-end">
                                 <div class="logo">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo.png" alt="">
+                                    <a href="<?= base_url(); ?>">
+                                        <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="d-xl-none d-lg-none d-block">
                                     <div class="user-profile">
                                         <div class="part-img">
-                                            <img src="assets/img/member-1.jpg" alt="">
+                                            <img src="<?= base_url('assets/img/member-1.jpg'); ?>" alt="">
                                         </div>
                                         <div class="user-info">
                                             <span class="user-name">Administrator</span>
@@ -125,7 +125,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="banner-statics">
                         <div class="single-statics">
                             <div class="part-icon">
-                                <img src="assets/img/svg/start.svg" alt="">
+                                <img src="<?= base_url('assets/img/svg/start.svg'); ?>" alt="">
                             </div>
                             <div class="part-text">
                                 <span class="text">Starting Date</span>
@@ -134,7 +134,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                         <div class="single-statics">
                             <div class="part-icon">
-                                <img src="assets/img/svg/user.svg" alt="">
+                                <img src="<?= base_url('assets/img/svg/user.svg'); ?>" alt="">
                             </div>
                             <div class="part-text">
                                 <span class="text">Online Users</span>
@@ -167,7 +167,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <ul>
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/img/svg/business-and-finance.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/business-and-finance.svg'); ?>" alt="">
                                     </div>
                                     <div class="text">
                                         <span class="title">Total<br /> Percent</span>
@@ -176,7 +176,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/img/svg/profit.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/profit.svg'); ?>" alt="">
                                     </div>
                                     <div class="text">
                                         <span class="title">Daily<br /> Profits</span>
@@ -185,7 +185,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/img/svg/profits.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/profits.svg'); ?>" alt="">
                                     </div>
                                     <div class="text">
                                         <span class="title">Net<br /> Profit</span>
@@ -194,7 +194,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/img/svg/return-on-investment.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/return-on-investment.svg'); ?>" alt="">
                                     </div>
                                     <div class="text">
                                         <span class="title">Total<br /> Return</span>
@@ -218,7 +218,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                         <div class="single-system">
                             <div class="part-icon">
-                                <img src="assets/img/svg/add-user.svg" alt="">
+                                <img src="<?= base_url('assets/img/svg/add-user.svg'); ?>" alt="">
                             </div>
                             <div class="part-text">
                                 <h4 class="title">Register Account</h4>
@@ -229,7 +229,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                         <div class="single-system">
                             <div class="part-icon">
-                                <img src="assets/img/svg/coin.svg" alt="">
+                                <img src="<?= base_url('assets/img/svg/coin.svg'); ?>" alt="">
                             </div>
                             <div class="part-text">
                                 <h4 class="title">Invest Money</h4>
@@ -240,7 +240,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                         <div class="single-system">
                             <div class="part-icon">
-                                <img src="assets/img/svg/money-bag.svg" alt="">
+                                <img src="<?= base_url('assets/img/svg/money-bag.svg'); ?>" alt="">
                             </div>
                             <div class="part-text">
                                 <h4 class="title">Get Withdraw</h4>
@@ -267,7 +267,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="col-xl-12 col-lg-12 col-sm-12 col-md-6">
                                 <div class="single-feature">
                                     <div class="feature-icon">
-                                        <img src="assets/img/svg/solar-energy.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/solar-energy.svg'); ?>" alt="">
                                     </div>
                                     <div class="feature-text">
                                         <h3>Shipment Tracking</h3>
@@ -279,7 +279,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="col-xl-12 col-lg-12 col-sm-12 col-md-6">
                                 <div class="single-feature">
                                     <div class="feature-icon">
-                                        <img src="assets/img/svg/diploma.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/diploma.svg'); ?>" alt="">
                                     </div>
                                     <div class="feature-text">
                                         <h3>Get a Quote</h3>
@@ -291,7 +291,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="col-xl-12 col-lg-12 col-sm-12 col-md-6">
                                 <div class="single-feature">
                                     <div class="feature-icon">
-                                        <img src="assets/img/svg/blockchain.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/blockchain.svg'); ?>" alt="">
                                     </div>
                                     <div class="feature-text">
                                         <h3>Have a Question?</h3>
@@ -303,7 +303,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="col-xl-12 col-lg-12 col-sm-12 col-md-6">
                                 <div class="single-feature">
                                     <div class="feature-icon">
-                                        <img src="assets/img/svg/worldwide.svg" alt="">
+                                        <img src="<?= base_url('assets/img/svg/worldwide.svg'); ?>" alt="">
                                     </div>
                                     <div class="feature-text">
                                         <h3>Shipping Calculator</h3>
@@ -341,7 +341,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <div class="Vertical-Slider">
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-2.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-2.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Hayden Schofield</span>
@@ -350,12 +350,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/bitcoin.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/bitcoin.svg'); ?>" alt="">
                                 </div>
                             </div>
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-3.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-3.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Aidan Ward</span>
@@ -364,12 +364,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/ethereum.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/ethereum.svg'); ?>" alt="">
                                 </div>
                             </div>
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-4.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-4.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Daniel Miah</span>
@@ -378,12 +378,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/litecoin.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/litecoin.svg'); ?>" alt="">
                                 </div>
                             </div>
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-2.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-2.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Hayden Schofield</span>
@@ -392,12 +392,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/bitcoin.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/bitcoin.svg'); ?>" alt="">
                                 </div>
                             </div>
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-3.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-3.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Aidan Ward</span>
@@ -406,12 +406,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/ethereum.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/ethereum.svg'); ?>" alt="">
                                 </div>
                             </div>
                             <div class="single-transaction">
                                 <div class="flag">
-                                    <img src="assets/img/flag/flag-4.jpg" alt="">
+                                    <img src="<?= base_url('assets/img/flag/flag-4.jpg'); ?>" alt="">
                                 </div>
                                 <div class="user-info">
                                     <span class="name">Daniel Miah</span>
@@ -420,7 +420,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <span class="tr-amount">$209.00</span>
                                 </div>
                                 <div class="coin">
-                                    <img src="assets/img/svg/litecoin.svg" alt="">
+                                    <img src="<?= base_url('assets/img/svg/litecoin.svg'); ?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -462,7 +462,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/withdraw.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/withdraw.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -475,7 +475,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/referral.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/referral.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -488,7 +488,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/affiliate-marketing.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/affiliate-marketing.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -503,7 +503,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="col-xl-4 col-lg-2 d-xl-flex d-lg-none d-block align-items-end">
                     <div class="part-img">
                         <div class="shadow-shape"></div>
-                        <img src="assets/img/choosing-reason.png" alt="">
+                        <img src="<?= base_url('assets/img/choosing-reason.png'); ?>" alt="">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-sm-10 col-md-12">
@@ -513,7 +513,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/bird.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/bird.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -526,7 +526,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/shield.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/shield.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -539,7 +539,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="single-reason">
                                     <div class="icon-box">
                                         <div class="part-icon">
-                                            <img src="assets/img/svg/customer-service.svg" alt="">
+                                            <img src="<?= base_url('assets/img/svg/customer-service.svg'); ?>" alt="">
                                         </div>
                                     </div>
                                     <div class="part-text">
@@ -575,7 +575,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                     <div class="single-blog">
                         <div class="part-img">
-                            <img src="assets/img/services/open_transport.jpg" alt="">
+                            <img src="<?= base_url('assets/img/services/open_transport.jpg'); ?>" alt="">
                             <a href="#"><i class="far fa-eye"></i></a>
                             <div class="post-date">
                                 <span class="date">26</span>
@@ -592,7 +592,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                     <div class="single-blog">
                         <div class="part-img">
-                            <img src="assets/img/services/1.gif" alt="">
+                            <img src="<?= base_url('assets/img/services/1.gif'); ?>" alt="">
                             <a href="#"><i class="far fa-eye"></i></a>
                             <div class="post-date">
                                 <span class="date">26</span>
@@ -609,7 +609,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
                     <div class="single-blog">
                         <div class="part-img">
-                            <img src="assets/img/services/enclosed_transport.jpg" alt="">
+                            <img src="<?= base_url('assets/img/services/enclosed_transport.jpg'); ?>" alt="">
                             <a href="#"><i class="far fa-eye"></i></a>
                             <div class="post-date">
                                 <span class="date">26</span>
@@ -643,7 +643,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                     <div class="col-xl-4 col-lg-4 d-xl-flex d-lg-flex justify-content-end d-block align-items-center">
                         <div class="part-video">
-                            <img src="assets/img/video.jpg" alt="">
+                            <img src="<?= base_url('assets/img/video.jpg'); ?>" alt="">
                             <button data-video-id="L61p2uyiMSo" class="play-video js-video-button"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
@@ -676,7 +676,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <div class="testi-text-slider">
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/1.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/1.png'); ?>" alt="">
                                 </span>
                                 <p>“Easy to talk to and friendly staff members. I transported my VW Polo and everything was on time and without any incidents. Looking forward for my next transport.
                                     5* Stars for your services. Thank you”</p>
@@ -688,7 +688,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/2.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/2.png'); ?>" alt="">
                                 </span>
                                 <p>“Driving 1200 Km from one city to another is not an easy job with the current traffic conditions. I gave my car to be transported so I can be relaxed and rested. TOP Service and PRO members!!!”</p>
                                 <div class="part-user">
@@ -699,7 +699,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/3.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/3.png'); ?>" alt="">
                                 </span>
                                 <p>“I bought a car using their service Vehicle Escrow. At first I was very afraid about paying in advance but all was super and now I am happy with the result.
                                     Great to test the car before signing the buy contract.”</p>
@@ -710,7 +710,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/4.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/4.png'); ?>" alt="">
                                 </span>
                                 <p>“I think this system is made for girls only :)) I had the chance to take my car to a mechanic and to inspect it. The seller was paid only after I was sure the car was in top condition.”</p>
                                 <div class="part-user">
@@ -721,7 +721,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/5.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/5.png'); ?>" alt="">
                                 </span>
                                 <p>“Ótimo serviço. Recebi meu carro em menos de 2 dias. Fantástico. Obrigado”</p>
                                 <div class="part-user">
@@ -732,7 +732,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                             <div class="single-testimonial">
                                 <span class="quot-icon">
-                                    <img src="assets/img/customer/6.png" alt="">
+                                    <img src="<?= base_url('assets/img/customer/6.png'); ?>" alt="">
                                 </span>
                                 <p>“Stayed at home and the car was delivered with all the documents to my address. Roads in Bulgaria are not so easy to find but the company managed. Fast delivery. Благодаря ти”</p>
                                 <div class="part-user">
@@ -744,22 +744,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                         <div class="testi-user-slider">
                             <div class="single-user">
-                                <img src="assets/img/customer/1.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/1.png'); ?>" alt="">
                             </div>
                             <div class="single-user">
-                                <img src="assets/img/customer/2.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/2.png'); ?>" alt="">
                             </div>
                             <div class="single-user">
-                                <img src="assets/img/customer/3.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/3.png'); ?>" alt="">
                             </div>
                             <div class="single-user">
-                                <img src="assets/img/customer/4.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/4.png'); ?>" alt="">
                             </div>
                             <div class="single-user">
-                                <img src="assets/img/customer/5.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/5.png'); ?>" alt="">
                             </div>
                             <div class="single-user">
-                                <img src="assets/img/customer/6.png" alt="">
+                                <img src="<?= base_url('assets/img/customer/6.png'); ?>" alt="">
                             </div>
                         </div>
                     </div>
@@ -777,8 +777,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
                         <div class="about-widget">
-                            <a href="index.html" class="logo">
-                                <img src="assets/img/logo.png" alt="">
+                            <a href="<?= base_url(); ?>" class="logo">
+                                <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
                             </a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi ut illum. Cumque, unde suscipit error!</p>
                             <div class="social-links">
@@ -862,7 +862,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-8">
-                        <p>Copyright © <a href="index.html">Oitila</a> - 2020. All Rights Reserved</p>
+                        <p>Copyright © <a href="<?= base_url(); ?>">Oitila</a> - 2020. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
@@ -877,22 +877,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <ul>
             <li>
                 <a href="#0">
-                    <img src="assets/img/svg/profile.svg" alt="">
+                    <img src="<?= base_url('assets/img/svg/profile.svg'); ?>" alt="">
                 </a>
             </li>
             <li>
                 <a href="#0">
-                    <img src="assets/img/svg/money-transfering.svg" alt="">
+                    <img src="<?= base_url('assets/img/svg/money-transfering.svg'); ?>" alt="">
                 </a>
             </li>
             <li>
                 <a href="#0">
-                    <img src="assets/img/svg/calculator.svg" alt="">
+                    <img src="<?= base_url('assets/img/svg/calculator.svg'); ?>" alt="">
                 </a>
             </li>
             <li>
                 <a href="#header">
-                    <img src="assets/img/svg/arrow.svg" alt="">
+                    <img src="<?= base_url('assets/img/svg/arrow.svg'); ?>" alt="">
                 </a>
             </li>
         </ul>
@@ -902,7 +902,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <div class="d-xl-block d-lg-block d-none">
     <div class="back-to-top-btn">
         <a href="#">
-            <img src="assets/img/svg/arrow.svg" alt="">
+            <img src="<?= base_url('assets/img/svg/arrow.svg'); ?>" alt="">
         </a>
     </div>
 </div>
