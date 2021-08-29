@@ -202,12 +202,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="row justify-content-around">
                     <div class="col-xl-6 col-lg-6 col-sm-10 col-md-6">
                         <div class="part-form">
-                            <form>
-                                <input type="text" placeholder="Players Name">
-                                <input type="text" placeholder="Players Email">
-                                <textarea placeholder="Write to Us..."></textarea>
-                                <button class="submit-btn def-btn" type="submit">Submit</button>
-                            </form>
+                            <?php echo form_open('action/send_email', array('id' => 'contact-form', 'class' => 'form-contact contact_form', 'data-abide' => '', 'novalidate' => '')); ?>
+                                <input type="text" name="name" id="name" placeholder="<?=$page['name']?> :">
+                                <input type="text" name="email" id="email" placeholder="<?=$page['email']?> :">
+                                <input type="number" name="phone" id="phone" placeholder="<?=$page['phone']?> :">
+                                <textarea name="message" id="message" placeholder="<?=$page['message']?> :"></textarea>
+                                <button type="submit" class="submit-btn def-btn button-contactForm main_btn"><?=$page['send_msg']?></button>
+                            <?php echo form_close(); ?>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
@@ -215,18 +216,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="addressing">
                                 <div class="single-address">
                                     <h4>Our Office</h4>
-                                    <p>1941 Romines Mill Road
-                                        Irving, TX 75062<br/>Texas, United States</p>
+                                    <p><?= WEBSITE_ADDRESS; ?></p>
                                 </div>
                                 <div class="single-address">
                                     <h4>Email</h4>
-                                    <p>DanielleHButeau@teleworm.us<br/>
-                                        CharlesTPride@armyspy.com</p>
+                                    <p><?= WEBSITE_EMAIL; ?></p>
                                 </div>
                                 <div class="single-address">
                                     <h4>Phone</h4>
-                                    <p>+1 318-342-7639<br/>
-                                        +1 530-259-4087</p>
+                                    <p><?= WEBSITE_PHONE; ?></p>
                                 </div>
                             </div>
                         </div>
