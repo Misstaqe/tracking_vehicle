@@ -1,0 +1,9 @@
+.about_services {
+	padding-top: 120px;
+}
+.about_services .static_special {
+	font-weight: 700;
+	background: -webkit-linear-gradient(-19deg, #8e54e9 10%, #4776e6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
