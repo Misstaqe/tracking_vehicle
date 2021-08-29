@@ -54,12 +54,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="user-panel">
-                                        <span>
-                                            <a href="#" class="login-btn">Login</a>or</span><a href="#" class="register-btn">Register</a>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
