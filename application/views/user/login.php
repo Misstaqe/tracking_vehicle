@@ -1,51 +1,66 @@
 <?php
-/**
- * Developer: Makhmudov J.
- * Date: 10/01/2018
- * Email: applepopov803@gmail.com
- */
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-<!--Login Section-->
-<section class="quote-area" style="min-height: 800px;">
+
+<!-- breadcrumb begin -->
+<div class="breadcrumb-oitila">
     <div class="container">
-      <div class="row justify-content-center text-left section-title-wrap" style="padding-top: 80px;">
-        <div class="text-center" style="margin: 40px;">
-            <h1 class="col-sm-12">User Login</h1>
-            <span class="col-sm-12">Please note: The boxes marked with * are mandatory and must be filled in.</span>
-        </div>
-
-        <div class="col-lg-12">
-            <div class="estimated-cost" style="background: #fbf9ff; padding: 30px;">
-                <?php 
-                    $form_attr = array('id' => 'login-form', 'class' => 'form-wrap login-form', 'data-abide' => '', 'novalidate' => '');
-                    echo form_open('login/submit', $form_attr) ?>
-                    <div data-abide-error class="alert callout" style="display: none;">
-                        <p><span class="fa fa-exclamation-circle" aria-hidden="true"></span> There are some errors in your form.</p>
-                    </div>
-                <?php if (isset($contact_errors)) echo $contact_errors; ?>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="form-group">
-                        <label for="firstName">Email: </label>
-                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email: *'" placeholder="Your email: *" type="email" name="login_acc_email" id="login_acc_email" class="form-control" value="">
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="form-group">
-                        <label for="lastName">Password: </label>
-                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your password: *'" placeholder="Your password: *" type="password" name="login_acc_pass" id="login_acc_pass" class="form-control" value="">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12 mt-4">
-                      <div class="text-center confirm_btn_box">
-                        <button type="submit" class="main_btn text-uppercase">Login</button>
-                      </div>
-                    </div>
-                  </div>
-                <?php echo form_close(); ?>
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-8">
+                <div class="part-txt">
+                    <h1>login</h1>
+                    <ul>
+                        <li>home</li>
+                        <li>login page</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
+                <div class="part-img">
+                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+<!-- breadcrumb end -->
+
+<!-- login begin -->
+<div class="login">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 col-md-7 col-sm-9">
+                <div class="form-area">
+                    <div class="row no-gutters">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="login-form">
+                                <?php 
+                                  $form_attr = array('id' => 'login-form', 'class' => '');
+                                  echo form_open('login/submit', $form_attr); 
+                                ?>
+                                    <div class="form-group">
+                                        <label for="login_acc_email">Email address</label>
+                                        <input type="email" name="login_acc_email" id="login_acc_email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="login_acc_pass">Password</label>
+                                        <input type="password" name="login_acc_pass" id="login_acc_pass" class="form-control">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">remember me</label>
+                                        <button type="submit" class="btn-form">Submit</button>
+                                    </div>
+                                <?php echo form_close(); ?>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-xl-block d-lg-block d-none">
+                            <div class="blank-space"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login end -->
