@@ -15,8 +15,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <script src="<?= base_url('assets/js/slick.min.js'); ?>"></script>
 <!-- toastr js -->
 <script src="<?= base_url('assets/js/toastr.min.js'); ?>"></script>
+<!-- utils for chart js -->
+<script src="<?= base_url('assets/js/utils.js'); ?>"></script>
+<!-- data table -->
+<script src="<?= base_url('assets/js/jquery.dataTables.js'); ?>"></script>
+<script src="<?= base_url('assets/js/data-able-active.js'); ?>"></script>
 <!-- clock js -->
 <script src="<?= base_url('assets/js/clock.min.js'); ?>"></script>
+<!-- date-picker js -->
+<script src="assets/js/date-picker.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/jtsage-datebox-bootstrap4@5.3.3/jtsage-datebox.min.js'></script>
 <!-- investment profit calculator-->
 <script src="<?= base_url('assets/js/investment-profit-calculator.js'); ?>"></script>
 <!-- main -->

@@ -1,4 +1,4 @@
 // data table active
-$('#example').DataTable();
+$("#example").DataTable();
 // data table
-$('.misco-data-table').wrap("<div class='table-responsive'></div>")
+$(".misco-data-table").wrap("<div class='table-responsive'></div>");

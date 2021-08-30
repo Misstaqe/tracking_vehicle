@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/slick-theme.css'); ?>" />
     <!-- toastr js -->
     <link rel="stylesheet" href="<?= base_url('assets/css/toastr.min.css'); ?>" />
+    <!-- data table -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/jquery.dataTables.css'); ?>">
     <!-- stylesheet -->
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>" />
     <!-- responsive -->
