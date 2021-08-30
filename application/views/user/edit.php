@@ -1,29 +1,83 @@
 <?php
-/**
- * Developer: Apple-vCTO.
- * Date: 05/03/2020
- * Email: applepopov803@gmail.com
- */
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 
-
-
-<?php
-$form_attr = array('class' => 'edit-form', 'data-abide' => '', 'novalidate' => '');
-echo form_open('edit/' . $user[0]->id . '/submit', $form_attr); ?>
-<div data-abide-error class="alert callout" style="display: none;">
-    <p><span class="fa fa-exclamation-circle" aria-hidden="true"></span> There are some errors in your form.</p>
+<!-- breadcrumb begin -->
+<div class="breadcrumb-oitila db-breadcrumb">
+    <div class="container">
+        <div class="row justify-content-lg-around">
+            <div class="col-xl-6 col-lg-7 col-md-5 col-sm-6 col-8">
+                <div class="part-txt">
+                    <h1>Admin</h1>
+                    <ul>
+                        <li>home</li>
+                        <li>Edit Account Details</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 col-md-7 col-sm-6 col-4 d-flex align-items-center">
+                <div class="db-user-profile">
+                    <div class="part-data">
+                        <span class="name">Administrator</span>
+                        <ul>
+                            <li>
+                                <span class="text">Invest</span>
+                                <span class="number">$100</span>
+                            </li>
+                            <li>
+                                <span class="text">Earings</span>
+                                <span class="number">$250</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="part-img">
+                        <img src="<?= base_url('assets/img/member-1.jpg'); ?>" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- breadcrumb end -->
 
-<?php echo form_fieldset('Account Details:'); ?>
-<hr>
-<label for="acc_email">Email</label>
-<?php $acc_email = array('type' => 'email', 'name' => 'acc_email', 'class' => 'single-input', 'id' => 'acc_email', 'required' => '', 'value' => $user[0]->email);
-echo form_input($acc_email); ?>
+<!-- account begin -->
+<div class="user-dashboard">
+    <div class="container">
 
-<?php echo form_fieldset_close(); ?>
-<div class="float-right" style="margin-top: 30px;">
-    <a href="<?= site_url('dashboard') ?>" class="button secondary">Back to dashboard</a>
-    <button type="submit" class="genric-btn info radius" value="submit" style="margin-left: 15px;">Update</button>
+        <div class="withdraw-section" style="max-width: 800px; margin: 0 auto;">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <h3 class="title">
+                        Edit Account Details
+                    </h3>
+                    <div class="add-credit-card card">
+                        <div class="card-body">
+                            <?php
+                                $form_attr = array('class' => 'edit-profile-form');
+                                echo form_open('edit/' . $user[0]->id . '/submit', $form_attr); 
+                            ?>
+                                <div class="row" style="text-align: left;">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-hyipox-medium btn-add-new-card">Update</button>
+                            <?php echo form_close(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
-<?php echo form_close(); ?>
+<!-- account end -->

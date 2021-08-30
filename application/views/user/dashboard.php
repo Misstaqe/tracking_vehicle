@@ -8,10 +8,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="row justify-content-lg-around">
             <div class="col-xl-6 col-lg-7 col-md-5 col-sm-6 col-8">
                 <div class="part-txt">
-                    <h1>Dashboard</h1>
+                    <h1>Admin</h1>
                     <ul>
                         <li>Home</li>
-                        <li>Transaction History</li>
+                        <li>Dashboard</li>
                     </ul>
                 </div>
             </div>

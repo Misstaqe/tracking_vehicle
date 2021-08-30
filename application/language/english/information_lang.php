@@ -34,7 +34,7 @@
 	$lang['link']['terms_con'] = 'Terms & Conditions';
 	$lang['link']['legal_info'] = 'Legal Info';
 	$lang['link']['dashboard'] = 'Dashboard';
-	$lang['link']['edit_account'] = 'Edit My Account';
+	$lang['link']['edit_account'] = 'Edit Account Details';
 	$lang['link']['change_pwd'] = 'Change Password';
 	$lang['link']['new_transaction'] = 'New Transaction';
 	$lang['link']['log_out'] = 'Log Out';
