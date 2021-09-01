@@ -118,6 +118,7 @@ $this->load->view('layout/header.php'); ?>
                                                 <div class="dropdown-menu" aria-labelledby="db-Dropdown">
                                                     <a class="dropdown-item" href="<?= base_url('dashboard'); ?>">dashboard</a>
                                                     <a class="dropdown-item" href="<?= base_url('edit/' . $this->session->userdata('id')); ?>">edit account details</a>
+                                                    <a class="dropdown-item" href="<?= base_url('change_password'); ?>">change password</a>
                                                     <a class="dropdown-item" href="<?= base_url('new'); ?>">new transaction</a>
                                                     <a class="dropdown-item" href="<?= base_url('action/logout_account'); ?>">log out</a>
                                                 </div>

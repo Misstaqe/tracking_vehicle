@@ -59,14 +59,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="row" style="text-align: left;">
                                     <div class="col-xl-12 col-lg-12">
                                         <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12">
-                                        <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password" aria-describedby="emailHelp">
+                                            <label for="acc_email">Email</label>
+                                            <?php 
+                                                $acc_email = array('type' => 'email', 'name' => 'acc_email', 'class' => 'form-control', 'id' => 'acc_email', 'required' => '', 'value' => $user[0]->email);
+                                                echo form_input($acc_email); 
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

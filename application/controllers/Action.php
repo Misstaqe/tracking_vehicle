@@ -291,7 +291,7 @@ class Action extends CI_Controller
             $data['user'] = $result;
 
             if ($submit == null) {
-                $this->load->view('layout/template_two_column', $data);
+                $this->load->view('layout/template', $data);
                 return true;
             } else {
 
@@ -319,7 +319,7 @@ class Action extends CI_Controller
                 }
 
             }
-            $this->load->view('layout/template_two_column', $data);
+            $this->load->view('layout/template', $data);
 
         } else {
             redirect('dashboard');
