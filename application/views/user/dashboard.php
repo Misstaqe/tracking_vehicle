@@ -31,7 +31,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </ul>
                     </div>
                     <div class="part-img">
-                        <img src="assets/img/member-1.jpg" alt="">
+                        <img src="<?= base_url('assets/img/member-1.jpg'); ?>" alt="">
                     </div>
                 </div>
             </div>

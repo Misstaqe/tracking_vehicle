@@ -37,7 +37,7 @@ if ($this->session->userdata('role') == 'Admin') {
                         </ul>
                     </div>
                     <div class="part-img">
-                        <img src="assets/img/member-1.jpg" alt="">
+                        <img src="<?= base_url('assets/img/member-1.jpg'); ?>" alt="">
                     </div>
                 </div>
             </div>

@@ -500,7 +500,7 @@ class Action extends CI_Controller
 
             $this->transaction_model->delete_transaction($transaction_reference);
             $data['mainContent'] = 'transaction/response';
-            $data['done_message'] = 'Deleted transaction ' . $transaction_reference;
+            $data['message'] = 'Deleted transaction ' . $transaction_reference;
             $this->load->view('layout/template', $data);
 
         } else if ($this->session->userdata('role') == 'User') {
@@ -508,11 +508,11 @@ class Action extends CI_Controller
             if ($transactions[0]->s_email == $this->session->userdata('email')) {
                 $this->transaction_model->delete_transaction($transaction_reference);
                 $data['mainContent'] = 'transaction/response';
-                $data['done_message'] = 'Deleted transaction ' . $transaction_reference . ' from our database';
+                $data['message'] = 'Deleted transaction ' . $transaction_reference . ' from our database';
                 $this->load->view('layout/template', $data);
             } else {
                 $data['mainContent'] = 'transaction/response';
-                $data['error_message'] = 'Could not delete that transaction';
+                $data['message'] = 'Could not delete that transaction';
                 $this->load->view('layout/template', $data);
             }
 
@@ -520,7 +520,7 @@ class Action extends CI_Controller
         } else {
             // Error logic goes here
             $data['mainContent'] = 'transaction/response';
-            $data['error_message'] = 'Stop other users from deleting anything other than their own transactions';
+            $data['message'] = 'Stop other users from deleting anything other than their own transactions';
             $this->load->view('layout/template', $data);
         }
     }
