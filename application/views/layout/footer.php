@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <!-- clock js -->
 <script src="<?= base_url('assets/js/clock.min.js'); ?>"></script>
 <!-- date-picker js -->
-<script src="assets/js/date-picker.js"></script>
+<!-- <script src="assets/js/date-picker.js"></script> -->
 <script src='https://cdn.jsdelivr.net/npm/jtsage-datebox-bootstrap4@5.3.3/jtsage-datebox.min.js'></script>
 <!-- investment profit calculator-->
 <script src="<?= base_url('assets/js/investment-profit-calculator.js'); ?>"></script>
