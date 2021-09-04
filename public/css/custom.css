@@ -1,3 +1,7 @@
+.clr-white {
+	color: white;
+}
+
 .about_services {
 	padding-top: 120px;
 }
@@ -7,10 +11,15 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-/* dashboard style */
+/* dashboard page style */
 table tbody tr td.sorting_1 a {
 	color: white;
 }
 .edit-profile-form {
 	text-align: center;
+}
+/* transaction details page style */
+.details_info_img {
+	width: 250px !important;
+	float: right;
 }

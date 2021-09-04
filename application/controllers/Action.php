@@ -1073,7 +1073,7 @@ class Action extends CI_Controller
                 
 //                @TODO CHANGE VIEW TO VIEW BACK HERE
                 
-                $data['mainContent'] = 'transaction/new-view';
+                $data['mainContent'] = 'transaction/details';
                 $this->load->view('layout/template', $data);
             } else {
                 $data['transaction'] = $transaction;
