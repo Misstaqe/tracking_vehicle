@@ -209,15 +209,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <td><?= $_value->s_email; ?></td>
                                     <td>
                                         <?php if ($_value->status < 0) { ?>
-                                            <a href="<?= site_url('amend/' . $_value->reference) ?>" class="genric-btn info-border circle small"><i class="fa fa-edit"></i> Edit</a>
+                                            <a href="<?= base_url('amend/' . $_value->reference); ?>" class="genric-btn info-border circle small"><i class="fa fa-edit"></i> Edit</a>
                                         <?php } elseif ($_value->status == 0) {
                                         ?>
-                                            <a id="<?= $_value->id ?>" href="<?= site_url('reset') ?>" class="genric-btn primary-border circle small reset"><i class="fa fa-cog"></i> Reset</a>
+                                            <a id="<?= $_value->id; ?>" href="<?= base_url('reset'); ?>" class="genric-btn primary-border circle small reset"><i class="fa fa-cog"></i> Reset</a>
                                         <?php } else { ?>
-                                            <a id="<?= $_value->id ?>" href="<?= site_url('reset') ?>" class="genric-btn primary-border circle small reset"><i class="fa fa-cog"></i> Reset</a>
-                                            <a href="<?= site_url('amend/' . $_value->reference) ?>" class="genric-btn info-border circle small"><i class="fa fa-edit"></i> Edit</a>
+                                            <a id="<?= $_value->id; ?>" href="<?= base_url('reset'); ?>" class="genric-btn primary-border circle small reset"><i class="fa fa-cog"></i> Reset</a>
+                                            <a href="<?= base_url('amend/' . $_value->reference); ?>" class="genric-btn info-border circle small"><i class="fa fa-edit"></i> Edit</a>
                                         <?php } ?>
-                                        <a href="<?= site_url('erase/' . $_value->reference) ?>" class="genric-btn danger-border circle small delete"><i class="fa fa-trash"></i> Delete</a>
+                                        <a href="<?= base_url('action/delete_transaction'); ?>" data-reference="<?= $_value->reference; ?>" class="genric-btn danger-border circle small delete"><i class="fa fa-trash"></i> Delete</a>
                                     </td>
                                 </tr>
                             <?php

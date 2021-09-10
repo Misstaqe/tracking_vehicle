@@ -9206,29 +9206,60 @@ var offset = 250,
 	/*// At what pixels show Back to Top Button*/ scrollDuration = 300,
 	/*// Duration of scrolling to top*/ id,
 	href,
+	reference,
 	pinHolder,
 	text;
 function checkOffset(absoluteElement, relativeElement) {}
 $(document).ready(function () {
 	$(document).foundation();
+
 	pinHolder = $(".pin-input");
+
 	$(".delete").on("click", function (e) {
 		e.preventDefault();
+
 		href = $(this).attr("href");
-		text = $(this).html();
-		$("body").append(
-			'<div class="pop-response">' +
-				'<a href="#" class="close-this no-close-pop">x</a>' +
-				"<p>Are you sure you want to " +
-				text.toLowerCase() +
-				" this?</p>" +
-				'<div class="button-group">' +
-				'<a href="' +
-				href +
-				'" class="button">Yes</a> ' +
-				'<a href="#" class="button no-close-pop">No</a>' +
-				"</div>" +
-				"</div>"
+		reference = $(this).attr("data-reference");
+
+		swal(
+			{
+				title: "Are you sure?",
+				text: "You are about to delete this transaction!",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				confirmButtonText: "Yes, delete it!",
+				cancelButtonText: "No, cancel please!",
+				closeOnConfirm: false,
+				closeOnCancel: true,
+			},
+			function (isConfirm) {
+				if (isConfirm) {
+					$.ajax({
+						url: href,
+						type: "post",
+						data: {
+							reference: reference,
+						},
+						dataType: "json",
+						success: function (response) {
+							if (response["success"]) {
+								swal("Delete!", response["message"], "success");
+
+								// remove row in datatable
+								window.location.reload();
+							} else {
+								swal("Ooops!", response["message"], "error");
+							}
+						},
+						error: function () {
+							swal("Ooops!", "Sorry, something went wrong!", "error");
+						},
+					});
+				} else {
+					swal.close();
+				}
+			}
 		);
 	});
 	$(document).on("click", ".no-close-pop", function (e) {

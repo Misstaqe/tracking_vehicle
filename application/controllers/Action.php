@@ -475,42 +475,41 @@ class Action extends CI_Controller
         $this->load->view('layout/template', $data);
     }
 
-    public function delete_transaction($transaction_reference = null)
+    public function delete_transaction()
     {
+        $transaction_reference = $this->input->post("reference");
+
         $data['footer'] = $this->lang->line('footer');
         $data['link'] = $this->lang->line('link');
 
         if ($this->session->userdata('status') != 'logged_in') {
-            redirect(site_url());
-        }
-
-        $this->load->model('transaction_model');
-        $transactions = $this->transaction_model->get_my_transaction($this->session->userdata('email'));
-
-        if ($this->session->userdata('role') == 'Admin') {
-
-            $this->transaction_model->delete_transaction($transaction_reference);
-            $data['mainContent'] = 'transaction/response';
-            $data['message'] = 'Deleted transaction ' . $transaction_reference;
-            $this->load->view('layout/template', $data);
-        } else if ($this->session->userdata('role') == 'User') {
-
-            if ($transactions[0]->s_email == $this->session->userdata('email')) {
-                $this->transaction_model->delete_transaction($transaction_reference);
-                $data['mainContent'] = 'transaction/response';
-                $data['message'] = 'Deleted transaction ' . $transaction_reference . ' from our database';
-                $this->load->view('layout/template', $data);
-            } else {
-                $data['mainContent'] = 'transaction/response';
-                $data['message'] = 'Could not delete that transaction';
-                $this->load->view('layout/template', $data);
-            }
+            $result["success"] = false;
+            $result["message"] = "You're not allowed to delete transaction.";
         } else {
-            // Error logic goes here
-            $data['mainContent'] = 'transaction/response';
-            $data['message'] = 'Stop other users from deleting anything other than their own transactions';
-            $this->load->view('layout/template', $data);
+            $this->load->model('transaction_model');
+            $transactions = $this->transaction_model->get_my_transaction($this->session->userdata('email'));
+
+            if ($this->session->userdata('role') == 'Admin') {
+                $this->transaction_model->delete_transaction($transaction_reference);
+                $result["success"] = true;
+                $result["message"] = "Deleted transaction" . $transaction_reference;
+            } else if ($this->session->userdata('role') == 'User') {
+                if ($transactions[0]->s_email == $this->session->userdata('email')) {
+                    $this->transaction_model->delete_transaction($transaction_reference);
+                    $result["success"] = true;
+                    $result["message"] = "Deleted transaction" . $transaction_reference . ' from our database';
+                } else {
+                    $result["success"] = false;
+                    $result["message"] = "Could not delete that transaction.";
+                }
+            } else {
+                // Error logic goes here
+                $result["success"] = false;
+                $result["message"] = "Stop other users from deleting anything other than their own transactions.";
+            }
         }
+
+        echo json_encode($result);
     }
 
     public function react_transaction($transaction_reference)
