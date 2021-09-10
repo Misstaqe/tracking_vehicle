@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * Developer: Makhmudov J.
@@ -138,7 +138,6 @@ class Action extends CI_Controller
         }
         $data['title'] = 'Register Account ' . WEBSITE_NAME;
         $this->load->view('layout/template', $data);
-
     }
 
     public function delete_account($user_id)
@@ -150,18 +149,15 @@ class Action extends CI_Controller
                 $this->user_model->delete_user($user_id);
                 redirect(site_url('dashboard'));
             }
-
         } else if ($this->session->userdata('role') == 'User' && $this->session->userdata('status') == 'logged_in' && $this->session->userdata('id') == $user_id) {
             $this->load->model('user_model');
             $this->user_model->delete_user($user_id);
             $this->logout_account();
-
         } else {
             // Error logic goes here
             $data['error_message'] = 'Error Message. Stop other users from deleting anything other than themselves';
             $this->load->view('layout/template_two_column', $data);
         }
-
     }
 
     public function edit_account($user_id = null, $submit = null)
@@ -225,10 +221,8 @@ class Action extends CI_Controller
                     }
                     $data['user'] = $this->user_model->get($user_id);
                 }
-
             }
             $this->load->view('layout/template', $data);
-
         } else {
             redirect(site_url('dashboard'));
         }
@@ -317,10 +311,8 @@ class Action extends CI_Controller
                     }
                     $data['user'] = $this->user_model->get($user_id);
                 }
-
             }
             $this->load->view('layout/template', $data);
-
         } else {
             redirect('dashboard');
         }
@@ -477,7 +469,6 @@ class Action extends CI_Controller
                 $data['success_message'] = 'Your new transaction reference: <a href="' . site_url() . 'transaction/view/' . $reference . '">' . $reference . '</a>';
 
                 $this->transaction_model->create_transaction($transaction_data);
-
             }
         }
 
@@ -488,7 +479,7 @@ class Action extends CI_Controller
     {
         $data['footer'] = $this->lang->line('footer');
         $data['link'] = $this->lang->line('link');
-            
+
         if ($this->session->userdata('status') != 'logged_in') {
             redirect(site_url());
         }
@@ -502,7 +493,6 @@ class Action extends CI_Controller
             $data['mainContent'] = 'transaction/response';
             $data['message'] = 'Deleted transaction ' . $transaction_reference;
             $this->load->view('layout/template', $data);
-
         } else if ($this->session->userdata('role') == 'User') {
 
             if ($transactions[0]->s_email == $this->session->userdata('email')) {
@@ -515,8 +505,6 @@ class Action extends CI_Controller
                 $data['message'] = 'Could not delete that transaction';
                 $this->load->view('layout/template', $data);
             }
-
-
         } else {
             // Error logic goes here
             $data['mainContent'] = 'transaction/response';
@@ -561,7 +549,6 @@ class Action extends CI_Controller
 
             $data['mainContent'] = 'transaction/new-view';
             $this->load->view('layout/template', $data);
-
         } else {
             if (isset($currentPIN) && $currentPIN == $pin) {
 
@@ -613,7 +600,6 @@ class Action extends CI_Controller
                     $data['mainContent'] = 'transaction/new-view';
                     $this->load->view('layout/template', $data);
                 }
-
             } else {
 
                 $data['transaction'] = $currentTransaction;
@@ -621,10 +607,8 @@ class Action extends CI_Controller
                 $data['mainContent'] = 'transaction/new-view';
                 $data['error_message'] = 'That PIN does not match our records';
                 $this->load->view('layout/template', $data);
-
             }
         }
-
     }
 
     public function approve_transaction($transaction_id, $approving_user = null)
@@ -638,13 +622,13 @@ class Action extends CI_Controller
                 $this->transaction_model->update_transaction($transaction_id, $transaction_data);
             }
             redirect(site_url('dashboard'));
-
         } else {
             redirect(site_url());
         }
     }
 
-    private function apprv_no_log($transaction_id) {
+    private function apprv_no_log($transaction_id)
+    {
         $this->load->model('transaction_model');
         $transaction_data = array(
             'status' => '1'
@@ -652,7 +636,8 @@ class Action extends CI_Controller
         $this->transaction_model->update_transaction($transaction_id, $transaction_data);
     }
 
-    private function dcln_no_log($transaction_id) {
+    private function dcln_no_log($transaction_id)
+    {
         $this->load->model('transaction_model');
         $transaction_data = array(
             'status' => '0'
@@ -660,7 +645,8 @@ class Action extends CI_Controller
         $this->transaction_model->update_transaction($transaction_id, $transaction_data);
     }
 
-    public function trigger_approve($transaction_reference, $pin) {
+    public function trigger_approve($transaction_reference, $pin)
+    {
         $this->load->model('transaction_model');
         $transaction = $this->transaction_model->get_transaction($transaction_reference);
         $transaction_id = $transaction[0]->id;
@@ -672,7 +658,8 @@ class Action extends CI_Controller
         }
     }
 
-    public function trigger_decline($transaction_reference, $pin) {
+    public function trigger_decline($transaction_reference, $pin)
+    {
         $this->load->model('transaction_model');
         $transaction = $this->transaction_model->get_transaction($transaction_reference);
         $transaction_id = $transaction[0]->id;
@@ -694,7 +681,6 @@ class Action extends CI_Controller
                 $this->transaction_model->update_transaction($transaction_id, $transaction_data);
             }
             redirect(site_url('dashboard'));
-
         } else {
             redirect(site_url());
         }
@@ -812,7 +798,6 @@ class Action extends CI_Controller
         $this->form_validation->set_rules($form_rules);
 
         if ($transaction[0]->status != null) {
-
         }
 
         if ($this->session->userdata('role') == 'Admin') {
@@ -912,7 +897,6 @@ class Action extends CI_Controller
                 redirect(site_url());
             }
         }
-
     }
 
 
@@ -951,7 +935,6 @@ class Action extends CI_Controller
         $data['footer'] = $this->lang->line('footer');
         $data['link'] = $this->lang->line('link');
         $this->load->view('layout/template', $data);
-
     }
 
     public function allow_transaction($transaction_id)
@@ -975,7 +958,7 @@ class Action extends CI_Controller
         /*Set form rules*/
         $this->form_validation->set_rules($form_rules);
 
-        if ($this->form_validation->run() == FALSE ) {
+        if ($this->form_validation->run() == FALSE) {
             $data['error_message'] = 'There isn`t a checked status.';
         } else {
             $deadline = $this->input->post('deadline', TRUE);
@@ -995,17 +978,17 @@ class Action extends CI_Controller
         $data['footer'] = $this->lang->line('footer');
         $data['link'] = $this->lang->line('link');
         $this->load->view('layout/template', $data);
-
     }
 
-    public function getUserIpAddr(){
-        if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+    public function getUserIpAddr()
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
             //ip from share internet
             $ip = $_SERVER['HTTP_CLIENT_IP'];
-        }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
             //ip pass from proxy
             $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-        }else{
+        } else {
             $ip = $_SERVER['REMOTE_ADDR'];
         }
         return $ip;
@@ -1062,17 +1045,16 @@ class Action extends CI_Controller
                 }
             }
             return true;
-
         } else if ($reference != null && strlen($reference) == 8) {
 
             $transaction = $this->transaction_model->get_transaction($reference);
             $count = count($transaction);
-            
+
             if ($count > 0) {
                 $data['transaction'] = $transaction;
-                
-//                @TODO CHANGE VIEW TO VIEW BACK HERE
-                
+
+                //                @TODO CHANGE VIEW TO VIEW BACK HERE
+
                 $data['mainContent'] = 'transaction/details';
                 $this->load->view('layout/template', $data);
             } else {
@@ -1081,7 +1063,6 @@ class Action extends CI_Controller
                 $data['mainContent'] = 'transaction/track';
                 $this->load->view('layout/template', $data);
             }
-
         } else if ($reference == null) {
             $data['mainContent'] = 'transaction/track';
             $this->load->view('layout/template', $data);
@@ -1150,21 +1131,21 @@ class Action extends CI_Controller
         $data["current_date"] = date("d.m.Y");
 
         $arr_s_address = explode(", ", $transaction[0]->s_address);
-        
+
         $data["b_address"] = $_POST["b_address"];
         $data["s_address"] = $arr_s_address;
 
         $startDate = time();
         $add_days = $transaction[0]->inspection_days;
-        $final_date = date('d.m.Y', strtotime('+'.$add_days.' day', $startDate));
+        $final_date = date('d.m.Y', strtotime('+' . $add_days . ' day', $startDate));
 
         $data["final_date"] = $final_date;
-        
-        $msg_html=$this->load->view('transaction/message_template', $data, true);
+
+        $msg_html = $this->load->view('transaction/message_template', $data, true);
         $pdf_html = $this->load->view('transaction/invoice_template', $data, true);
 
-        $pdfFilePath = "invoice/TREUHANDVERTRAG_".$_POST["reference"].".pdf";
-        
+        $pdfFilePath = "invoice/TREUHANDVERTRAG_" . $_POST["reference"] . ".pdf";
+
         $this->load->library('m_pdf');
         $this->m_pdf->pdf->WriteHTML($pdf_html);
         $this->m_pdf->pdf->Output($pdfFilePath, "F");
@@ -1173,16 +1154,16 @@ class Action extends CI_Controller
         $this->load->library('email');
 
         $this->email->from('contact@smdglogistic.com');
-        
+
         $this->email->to($_POST["b_email"]);
         $this->email->subject('Die Transaktion ' . $_POST["reference"] . ' wurde gestartet!');
         $this->email->message($msg_html);
         $this->email->attach(base_url() . $pdfFilePath);
         $this->email->attach($pdfFilePath);
         try {
-            $this->email->send();    
+            $this->email->send();
         } catch (Exception $e) {
-            var_dump("error: " . $e->getMessage());            
+            var_dump("error: " . $e->getMessage());
         }
 
         $data['title'] = 'Tracking ' . WEBSITE_NAME;
@@ -1193,7 +1174,7 @@ class Action extends CI_Controller
         $this->load->view('layout/template', $data);
     }
 
-    public function transaction_view($reference) 
+    public function transaction_view($reference)
     {
         $this->load->model('transaction_model');
 
@@ -1220,36 +1201,37 @@ class Action extends CI_Controller
 
         $arr_b_address = explode(", ", $transaction[0]->b_address);
         $arr_s_address = explode(", ", $transaction[0]->s_address);
-        
+
         $data["b_address"] = $arr_b_address;
         $data["s_address"] = $arr_s_address;
 
         $startDate = time();
         $add_days = $transaction[0]->inspection_days;
-        $final_date = date('d.m.Y', strtotime('+'.$add_days.' day', $startDate));
+        $final_date = date('d.m.Y', strtotime('+' . $add_days . ' day', $startDate));
 
         $data["final_date"] = $final_date;
-        
-        $html=$this->load->view('transaction/invoice_template', $data, true);
+
+        $html = $this->load->view('transaction/invoice_template', $data, true);
         $this->load->library('m_pdf');
         $this->m_pdf->pdf->WriteHTML($html);
-        $this->m_pdf->pdf->Output('TREUHANDVERTRAG_' . $reference . '.pdf', "D");   
+        $this->m_pdf->pdf->Output('TREUHANDVERTRAG_' . $reference . '.pdf', "D");
     }
 
-    public function test(){
+    public function test()
+    {
         // $this->load->view('transaction/invoice_template');
         $this->email->from('contact@smdglogistic.com');
-        
+
         $this->email->to("applepopov803@gmail.com");
         $this->email->subject('Die Transaktion #333 wurde gestartet!');
         $this->email->message("test message");
-        
+
         try {
-            $result = $this->email->send();    
-            var_dump($result);exit;
+            $result = $this->email->send();
+            var_dump($result);
+            exit;
         } catch (Exception $e) {
-            var_dump("error: " . $e->getMessage());            
+            var_dump("error: " . $e->getMessage());
         }
     }
-
 }
