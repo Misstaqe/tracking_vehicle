@@ -18,6 +18,10 @@ table tbody tr td.sorting_1 a {
 .edit-profile-form {
 	text-align: center;
 }
+.transaction-data-table .status span.badge {
+	padding: 7px 10px;
+	border-radius: 4px;
+}
 /* transaction details page style */
 .details_info_img {
 	width: 250px !important;

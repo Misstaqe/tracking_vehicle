@@ -134,7 +134,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <div class="transactions-table">
             <div class="table-responsive">
-                <table id="example" class="display misco-data-table" style="width:100%">
+                <table id="example" class="display transaction-data-table" style="width:100%">
                     <thead>
                         <tr>
                             <th>Reference</th>
@@ -163,42 +163,42 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                         switch ($_value->status) {
                                             case '-2':
                                         ?>
-                                                <span class="label warning"><i class="fa fa-clock-o"></i> Pending</span>
+                                                <span class="badge badge-secondary"><i class="fa fa-clock"></i> Pending</span>
                                             <?php
                                                 break;
                                             case '-1':
                                             ?>
-                                                <span class="label secondary"><i class="fa fa-hourglass-o"></i> Expired</span>
+                                                <span class="badge badge-danger"><i class="fa fa-hourglass"></i> Expired</span>
                                             <?php
                                                 break;
                                             case '0':
                                             ?>
-                                                <span class="label alert"><i class="fa fa-close"></i> Declined</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-dark"><i class="fa fa-close"></i> Declined</span> on <small><?= $_value->date_updated ?></small>
                                             <?php
                                                 break;
                                             case '1':
                                             ?>
-                                                <span class="label success"><i class="fa fa-check"></i> Transaction approved</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-info"><i class="fa fa-check"></i> Transaction approved</span> on <small><?= $_value->date_updated ?></small>
                                             <?php
                                                 break;
                                             case '2':
                                             ?>
-                                                <span class="label success"><i class="fa fa-check"></i> Awaiting payment</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-warning"><i class="fa fa-check"></i> Awaiting payment</span> on <small><?= $_value->date_updated ?></small>
                                             <?php
                                                 break;
                                             case '3':
                                             ?>
-                                                <span class="label success"><i class="fa fa-check"></i> Payment confirmed</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-primary"><i class="fa fa-check"></i> Payment confirmed</span> on <small><?= $_value->date_updated ?></small>
                                             <?php
                                                 break;
                                             case '4':
                                             ?>
-                                                <span class="label success"><i class="fa fa-check"></i> Transport in progress</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-light"><i class="fa fa-check"></i> Transport in progress</span> on <small><?= $_value->date_updated ?></small>
                                             <?php
                                                 break;
                                             case '5':
                                             ?>
-                                                <span class="label success"><i class="fa fa-check"></i> Delivery finished</span> on <small><?= $_value->date_updated ?></small>
+                                                <span class="badge badge-success"><i class="fa fa-check"></i> Delivery finished</span> on <small><?= $_value->date_updated ?></small>
                                         <?php
                                                 break;
                                         }
