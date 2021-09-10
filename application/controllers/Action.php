@@ -1034,7 +1034,7 @@ class Action extends CI_Controller
                     $this->transaction_model->update_transaction($transaction[0]->id, $transaction_data);
 
                     $data['transaction'] = $transaction;
-                    $data['mainContent'] = 'transaction/new-view';
+                    $data['mainContent'] = (($transaction[0]->status == '-2') || ($transaction[0]->status == '1')) ? 'transaction/new-view' : 'transaction/details';
                     $this->load->view('layout/template', $data);
                 } else {
                     $data['transaction'] = $transaction;
