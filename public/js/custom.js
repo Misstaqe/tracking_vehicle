@@ -9260,7 +9260,7 @@ $(document).ready(function () {
 						success: function () {
 							$("#" + id)
 								.html('<i class="fa fa-cog"></i> Reset')
-								.closest(".table-row")
+								.closest("tr")
 								.children(".status")
 								.html(
 									'<span class="label warning">' +
