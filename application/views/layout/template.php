@@ -5,7 +5,7 @@ $this->load->view('layout/header.php'); ?>
 
 <div class="notification-alert">
     <div class="notice-list">
-        
+
     </div>
 </div>
 
@@ -24,7 +24,7 @@ $this->load->view('layout/header.php'); ?>
                 <div class="row">
                     <div class="col-xl-5 col-lg-3">
                         <div class="welcome-text">
-                            <p>Welcome to Oitila</p>
+                            <p>Welcome to <?= WEBSITE_NAME; ?></p>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-9 d-xl-flex d-lg-flex d-block align-items-center">
@@ -61,7 +61,7 @@ $this->load->view('layout/header.php'); ?>
                 </div>
             </div>
         </div>
-        
+
         <div class="bottom">
             <div class="container">
                 <div class="row justify-content-between">
@@ -72,12 +72,12 @@ $this->load->view('layout/header.php'); ?>
                                     <span class="dag"></span>
                                     <span class="dag2"></span>
                                     <span class="dag3"></span>
-                                </button>    
+                                </button>
                             </div>
                             <div class="col-xl-12 col-lg-12 col-8 d-xl-block d-lg-block d-flex align-items-center justify-content-end">
                                 <div class="logo">
                                     <a href="<?= base_url(); ?>">
-                                        <img src="<?= base_url('assets/img/logo2.png'); ?>" alt="">
+                                        <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -204,28 +204,28 @@ $this->load->view('layout/header.php'); ?>
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="#0" class="single-link">
-                                        About Us
+                                    <a href="<?= base_url(); ?>" class="single-link">
+                                        Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" class="single-link">
-                                        Affiliate
+                                    <a href="<?= base_url('site/services'); ?>" class="single-link">
+                                        Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" class="single-link">
-                                        Pricing Plan
+                                    <a href="<?= base_url('site/contact'); ?>" class="single-link">
+                                        Contact
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" class="single-link">
-                                        Profit
+                                    <a href="<?= base_url('site/legal_info'); ?>" class="single-link">
+                                        Privacy policy
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" class="single-link">
-                                        Terms & Policy
+                                    <a href="<?= base_url('site/terms_and_conditions'); ?>" class="single-link">
+                                        Terms of service
                                     </a>
                                 </li>
                             </ul>
@@ -252,7 +252,7 @@ $this->load->view('layout/header.php'); ?>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-8">
-                        <p>Copyright © <a href="<?= base_url(); ?>">Oitila</a> - 2020. All Rights Reserved</p>
+                        <p>Copyright © <a href="<?= base_url(); ?>"><?= WEBSITE_NAME; ?></a> - 2020. All Rights Reserved</p>
                     </div>
                 </div>
             </div>

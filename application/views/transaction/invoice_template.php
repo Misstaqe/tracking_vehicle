@@ -16,11 +16,11 @@
 	<div class="content" style="clear: both;">
 		<div class="detail-1-1">
 			<div style="width: 35%; float: left; font-size: 14px; padding-top: 10px;">
-				<p style="margin: 5px 0px;"><strong><?= $transaction[0]->b_name ?></strong></p>
-				<p style="margin: 5px 0px;"><?= $transaction[0]->b_address ?></p>
-				<p style="margin: 5px 0px;"><?= $transaction[0]->b_city ?></p>
-				<p style="margin: 5px 0px;"><?= $transaction[0]->b_postal_code ?></p>
-				<p style="margin: 5px 0px;"><?= $transaction[0]->b_country ?></p>
+				<p style="margin: 5px 0px;"><strong><?= $transaction[0]->b_name; ?></strong></p>
+				<p style="margin: 5px 0px;"><?= $transaction[0]->b_address; ?></p>
+				<p style="margin: 5px 0px;"><?= $transaction[0]->b_city; ?></p>
+				<p style="margin: 5px 0px;"><?= $transaction[0]->b_postal_code; ?></p>
+				<p style="margin: 5px 0px;"><?= $transaction[0]->b_country; ?></p>
 			</div>
 			<div style="width: 60%; float: right;">
 				<img src="<?= base_url('public/img/nicht.jpg'); ?>" width="100%">
@@ -28,10 +28,10 @@
 			<div style="font-size: 14px; width: 100%; padding-top: 20px;">
 				<div class="detail-1-2" style="background-color: #f2f2f2;">
 					<div style="font-size: 14px;">
-						<p style="margin: 5px 0px;">Rechnungsdatum: <strong><?= $current_date ?></strong></p>
+						<p style="margin: 5px 0px;">Rechnungsdatum: <strong><?= $current_date; ?></strong></p>
 						<p style="margin: 5px 0px;">Kundennummer: <strong>K0620881</strong></p>
 						<p style="margin: 5px 0px;">Zahlungsziel: <strong>3 Tag(e)</strong></p>
-						<p style="margin: 5px 0px;">Unternehmensvertreter: <strong><?= $transaction[0]->b_detail_1 ?></strong></p>
+						<p style="margin: 5px 0px;">Unternehmensvertreter: <strong><?= $transaction[0]->b_detail_1; ?></strong></p>
 					</div>
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 					<tr style="background-color: #c0c0c0;">
 						<td style="text-align: center;">1</td>
 						<td><?= $transaction[0]->p_description ?></td>
-						<td style="text-align: center;"><?= $transaction[0]->p_value ?></td>
+						<td style="text-align: center;"><?= $transaction[0]->p_value; ?></td>
 						<td style="text-align: center;">19</td>
 					</tr>
 					<tr>
@@ -67,19 +67,19 @@
 						<td style="background-color: white;"></td>
 						<td><strong>Zwischensumme netto (19,00%)</strong></td>
 						<td></td>
-						<td style="text-align: center;"><?php echo round(($transaction[0]->p_value / 119 * 100), 2) ?> EUR</td>
+						<td style="text-align: center;"><?= round(($transaction[0]->p_value / 119 * 100), 2); ?> EUR</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td><strong>+ Mehrwertsteuer (19,00%)</strong></td>
 						<td></td>
-						<td style="text-align: center;"><?php echo round(($transaction[0]->p_value / 119 * 19), 2) ?> EUR</td>
+						<td style="text-align: center;"><?= round(($transaction[0]->p_value / 119 * 19), 2); ?> EUR</td>
 					</tr>
 					<tr style="position: relative; background-color: #c0c0c0; border-bottom: 1px solid black;">
 						<td style="background-color: white; border-bottom: none; border-bottom: 1px solid white;"></td>
 						<td style="font-size: 20px;"><strong>Zu zahlender Betrag</strong></td>
 						<td></td>
-						<td style="position: absolute; right: 60px; font-size: 20px;"><strong><?= $transaction[0]->p_value ?> EUR</strong></td>
+						<td style="position: absolute; right: 60px; font-size: 20px;"><strong><?= $transaction[0]->p_value; ?> EUR</strong></td>
 					</tr>
 				</tbody>
 			</table>
@@ -87,20 +87,20 @@
 
 		<div class="desc-1-1" style="font-size: 14px; width: 50%; float: left; margin-top: 30px;">
 			<p>Zahlung innerhalb von 3 Tagen ab Rechnungseingang ohne Abzüge an die unten angegebene Bankverbindung.<br>Wir erwarten Ihre Zahlung innerhalb von 3 Tagen auf unserem Zahlungsstelle Bankkonto.<br>Sollten wir nichts von Ihnen hören, sehen wir uns zu weiteren juristischen Schritten gezwungen.<br>Sollten Sie die Überweisung nicht fristgemäß vornehmen, unsere Firma werde die Forderung an ein Inkassounternehmen abgeben, was mit weiteren Kosten zu Ihren Lasten verbunden sein wird.</p>
-			<p>Für die Überweisung des Rechnungsbetrags nutzen Sie bitte unsere Bankverbindung.<br>Bitte geben Sie bei der Zahlung Ihre Referenznummer <strong><?= $transaction[0]->reference ?></strong>
+			<p>Für die Überweisung des Rechnungsbetrags nutzen Sie bitte unsere Bankverbindung.<br>Bitte geben Sie bei der Zahlung Ihre Referenznummer <strong><?= $transaction[0]->reference; ?></strong>
 
 			<div>
 				<div>
-					<p style="margin-top: 2px; margin-bottom: 2px;">Empfänger: <strong><?= $transaction[0]->b_detail_1 ?></strong></p>
+					<p style="margin-top: 2px; margin-bottom: 2px;">Empfänger: <strong><?= $transaction[0]->b_detail_1; ?></strong></p>
 				</div>
 				<div>
-					<p style="margin-top: 2px; margin-bottom: 2px;">IBAN: <strong><?= $transaction[0]->b_detail_2 ?></strong></p>
+					<p style="margin-top: 2px; margin-bottom: 2px;">IBAN: <strong><?= $transaction[0]->b_detail_2; ?></strong></p>
 				</div>
 				<div>
-					<p style="margin-top: 2px; margin-bottom: 2px;">BIC/SWIFT: <strong><?= $transaction[0]->b_detail_3 ?></strong></p>
+					<p style="margin-top: 2px; margin-bottom: 2px;">BIC/SWIFT: <strong><?= $transaction[0]->b_detail_3; ?></strong></p>
 				</div>
 				<div>
-					<p style="margin-top: 2px; margin-bottom: 2px;">Referenznummer: <strong><?= $transaction[0]->reference ?></strong></p>
+					<p style="margin-top: 2px; margin-bottom: 2px;">Referenznummer: <strong><?= $transaction[0]->reference; ?></strong></p>
 				</div>
 			</div>
 		</div>
@@ -108,10 +108,10 @@
 		<div style="width: 50%; float: left; margin-bottom: 260px;">
 			<img src="<?= base_url('public/img/phone.png'); ?>" style="margin-left: 50px;">
 			<div style="margin-top: -479px; margin-left: 70px; text-align: center;">
-				<p><strong style="font-size: 18px; color: red;"><?= $transaction[0]->b_detail_1 ?></strong></p>
-				<p style="margin-top: 27px;"><strong style="font-size: 18px; letter-spacing: 0px; color: red;"><?= $transaction[0]->b_detail_2 ?></strong></p>
-				<p style="margin-top: 28px;"><strong style="font-size: 21px; color: red;"><?= $transaction[0]->p_value ?></strong></p>
-				<p style="margin-top: 27px; margin-left: 100px;"><strong style="font-size: 21px; color: red;"><?= $transaction[0]->reference ?></strong></p>
+				<p><strong style="font-size: 18px; color: red;"><?= $transaction[0]->b_detail_1; ?></strong></p>
+				<p style="margin-top: 27px;"><strong style="font-size: 18px; letter-spacing: 0px; color: red;"><?= $transaction[0]->b_detail_2; ?></strong></p>
+				<p style="margin-top: 28px;"><strong style="font-size: 21px; color: red;"><?= $transaction[0]->p_value; ?></strong></p>
+				<p style="margin-top: 27px; margin-left: 100px;"><strong style="font-size: 21px; color: red;"><?= $transaction[0]->reference; ?></strong></p>
 			</div>
 		</div>
 	</div>
@@ -121,16 +121,16 @@
 			<img src="<?= base_url('public/img/pic_footer.png'); ?>">
 		</div>
 		<div style="width: 30%; float: left;">
-			SMDG Logistic GmbH<br>
-			Am Bahndamm 17<br>
-			54338 Schweich<br>
-			Deutschland<br>
+			<?= WEBSITE_NAME; ?><br>
+			Bahnhofstr. 67<br>
+			35708 Haiger<br>
+			Germany<br>
 		</div>
 		<div style="width: 30%; float: left;">
 			USt-IdNr. DE317198791<br>
-			Tel: +498005007015<br>
-			Fax: +498005007015<br>
-			Email: contact@smdglogistic.com<br>
+			Tel: <?= WEBSITE_PHONE; ?><br>
+			Fax: <?= WEBSITE_PHONE; ?><br>
+			Email: <?= WEBSITE_EMAIL; ?><br>
 		</div>
 		<div style="width: 30%; float: left;">
 			<?= $transaction[0]->b_detail_1 ?><br>
@@ -144,7 +144,7 @@
 		<div style="float: left; width: 50%; font-size: 20px;">
 			<strong>Allgemeine Geschäftsbedingungen</strong>
 			<strong>für die Nutzung des transport inkl. Treuhandservice</strong>
-			<strong>für die SMDG Logistic GmbH</strong>
+			<strong>für die <?= WEBSITE_NAME; ?></strong>
 		</div>
 		<div style="text-align: right; float: right; width: 50%;">
 			<img src="<?= base_url('public/img/logo.png'); ?>" style="width: auto; height: 70px; margin-top: -40px;">
@@ -154,7 +154,7 @@
 	<div class="content" style="font-size: 13px; clear: both;">
 		<div class="detail-2-1" style="padding-top: 60px;">
 			<div style="float: left; width: 33%;">
-				<p style="margin: 5px 0px;"><strong>Vermittler:</strong>SMDG Logistic GmbH</p>
+				<p style="margin: 5px 0px;"><strong>Vermittler:</strong><?= WEBSITE_NAME; ?></p>
 				<p style="margin: 5px 0px;"><strong><strong><span><?= $transaction[0]->b_detail_1 ?></span></p>
 			</div>
 			<div style="float: left; width: 33%;">
@@ -234,16 +234,16 @@
 						<img src="<?= base_url('public/img/pic_footer.png'); ?>">
 					</div>
 					<div style="width: 30%; float: left;">
-						SMDG Logistic GmbH<br>
-						Am Bahndamm 17<br>
-						54338 Schweich<br>
-						Deutschland<br>
+						<?= WEBSITE_NAME; ?><br>
+						Bahnhofstr. 67<br>
+						35708 Haiger<br>
+						Germany<br>
 					</div>
 					<div style="width: 30%; float: left;">
 						USt-IdNr. DE317198791<br>
-						Tel: +498005007015<br>
-						Fax: +498005007015<br>
-						Email: contact@smdglogistic.com<br>
+						Tel: <?= WEBSITE_PHONE; ?><br>
+						Fax: <?= WEBSITE_PHONE; ?><br>
+						Email: <?= WEBSITE_EMAIL; ?><br>
 					</div>
 					<div style="width: 30%; float: left;">
 						<?= $transaction[0]->b_detail_1 ?><br>
@@ -252,3 +252,6 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>

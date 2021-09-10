@@ -221,7 +221,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         Must Meet With
                     </span>
                     <h2>
-                        Oitila's recent transaction
+                        <?= WEBSITE_NAME; ?>'s recent transaction
                     </h2>
                 </div>
             </div>
@@ -321,7 +321,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="part-text">
                     <h2>see all status of our activity</h2>
                     <p>A transaction list contains a summary of a recent transaction, as like the user and the date, time processed, and transaction status. It also shows transaction information.</p>
-                    <p class="marked"><b>Important:</b> Your Past Transactions list will show the past history in account activity on oitila. If you need information prior to the any year of the past, the statements will attach the past transaction history.</p>
+                    <p class="marked"><b>Important:</b> Your Past Transactions list will show the past history in account activity on <?= WEBSITE_NAME; ?>. If you need information prior to the any year of the past, the statements will attach the past transaction history.</p>
                     <a href="#" class="btn-hyipox-medium cta-btn">Open An Account</a>
                 </div>
             </div>
@@ -340,7 +340,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         You couldn't think
                     </span>
                     <h2>
-                        why oitila is<span class="special"> the best</span>
+                        why <?= WEBSITE_NAME; ?> is<span class="special"> the best</span>
                     </h2>
                 </div>
             </div>
@@ -371,7 +371,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </div>
                                 <div class="part-text">
                                     <h3 class="title">Unlimited Referral Bonus</h3>
-                                    <p>Promote oitila and earn unlimited referral commission from each referral links</p>
+                                    <p>Promote <?= WEBSITE_NAME; ?> and earn unlimited referral commission from each referral links</p>
                                 </div>
                             </div>
                         </div>
@@ -435,7 +435,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </div>
                                 <div class="part-text">
                                     <h3 class="title">24/7 Friendly Support</h3>
-                                    <p>We provide 24/7 friendly support in Oitila. We're always responsible to take care</p>
+                                    <p>We provide 24/7 friendly support in <?= WEBSITE_NAME; ?>. We're always responsible to take care</p>
                                 </div>
                             </div>
                         </div>

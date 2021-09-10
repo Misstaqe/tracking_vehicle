@@ -17,12 +17,12 @@ class Action extends CI_Controller
         $this->lang->load('information', 'english');
 
         $config['protocol']    = 'smtp';
-        $config['smtp_host']    = 'smdglogistic.com';
+        $config['smtp_host']    = WEBSITE_HOST;
         $config['smtp_port']    = '465';
         $config['smtp_crypto'] = 'ssl';
         $config['smtp_timeout'] = '30';
-        $config['smtp_user']    = 'contact@smdglogistic.com';
-        $config['smtp_pass']    = 'b1z}R&IX^PiR';
+        $config['smtp_user']    = WEBSITE_EMAIL;
+        $config['smtp_pass']    = WEBSITE_EMAIL_PWD;
         $config['charset']    = 'utf-8';
         $config['newline']    = "\r\n";
         $config['crlf']    = "\r\n";
@@ -1152,7 +1152,7 @@ class Action extends CI_Controller
         // send invoice to buyer
         $this->load->library('email');
 
-        $this->email->from('contact@smdglogistic.com');
+        $this->email->from(WEBSITE_EMAIL);
 
         $this->email->to($_POST["b_email"]);
         $this->email->subject('Die Transaktion ' . $_POST["reference"] . ' wurde gestartet!');
@@ -1219,7 +1219,7 @@ class Action extends CI_Controller
     public function test()
     {
         // $this->load->view('transaction/invoice_template');
-        $this->email->from('contact@smdglogistic.com');
+        $this->email->from(WEBSITE_EMAIL);
 
         $this->email->to("applepopov803@gmail.com");
         $this->email->subject('Die Transaktion #333 wurde gestartet!');

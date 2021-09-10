@@ -10,11 +10,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | of this setting
 |
 */
+define('WEBSITE_HOST', 'akostrans.com');
 define('SITE_URL', 'http://ci.oitila.com');
-define('WEBSITE_NAME', 'SMDG Logistic');
-define('WEBSITE_ADDRESS', 'Am Bahndamm 17, 54338 Schweich, Germany');
+define('WEBSITE_NAME', 'Trans AKOS GmbH');
+define('WEBSITE_ADDRESS', 'Bahnhofstr. 67, 35708 Haiger, Germany');
 define('WEBSITE_PHONE', '+4932229982113');
-define('WEBSITE_EMAIL', 'contact@smdglogistic.com');
+define('WEBSITE_EMAIL', 'contact@akostrans.com');
+define('WEBSITE_EMAIL_PWD', 'UMo&p[wi}vzo');
 define('HASH_KEY', 'numeleAplicatiei');
 
 /*

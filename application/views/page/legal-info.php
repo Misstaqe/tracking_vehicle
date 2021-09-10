@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Developer: Makhmudov J.
  * Date: 10/01/2018
@@ -17,7 +18,7 @@
         <!-- Lower Content -->
         <div class="lower-content">
             <h2>Responsible</h2>
-            <p>SMDG Logistic GmbH</p>
+            <p><?= WEBSITE_NAME; ?></p>
             <p>Am Bahndamm 17</p>
             <p>54338 Schweich </p>
         </div>
@@ -25,9 +26,9 @@
         <br>
         <!-- Lower Content -->
         <div class="lower-content">
-            <p>SMDG Logistic GmbH</p>
-            <p>HR-Nr.	HRB 44199
-USt-IdNr.	DE317198791</p>
+            <p><?= WEBSITE_NAME; ?></p>
+            <p>HR-Nr. HRB 44199
+                USt-IdNr. DE317198791</p>
         </div>
 
         <!-- Lower Content -->
@@ -139,7 +140,7 @@ USt-IdNr.	DE317198791</p>
             <p>- Payment data (eg, bank details, payment history)</p>
             <p>from our customers, prospects and business partners for the purpose of providing contractual services, service and customer care, marketing, advertising and market research.</p><br>
             <p>Administration, financial accounting, office organization, contact management
-            We process data in the context of administrative tasks as well as organization of our business, financial accounting and compliance with legal obligations, such as archiving. In doing so, we process the same data that we process in the course of rendering our contractual services. The processing principles are Art. 6 para. 1 lit. c. DSGVO, Art. 6 para. 1 lit. f. DSGVO. The processing affects customers, prospects, business partners and website visitors. The purpose and interest in processing lies in administration, financial accounting, office organization, data archiving, that is, tasks that serve to maintain our business, perform our duties and provide our services.</p><br>
+                We process data in the context of administrative tasks as well as organization of our business, financial accounting and compliance with legal obligations, such as archiving. In doing so, we process the same data that we process in the course of rendering our contractual services. The processing principles are Art. 6 para. 1 lit. c. DSGVO, Art. 6 para. 1 lit. f. DSGVO. The processing affects customers, prospects, business partners and website visitors. The purpose and interest in processing lies in administration, financial accounting, office organization, data archiving, that is, tasks that serve to maintain our business, perform our duties and provide our services.</p><br>
             <p>We disclose or transmit data to the financial administration, consultants, such as tax accountants or auditors, as well as other fee offices and payment service providers.</p><br>
             <p>Furthermore, we store information on suppliers, organizers and other business partners on the basis of our business interests, eg for the purpose of contacting you later. We generally store this majority of company-related data permanently.</p>
         </div>
@@ -152,7 +153,7 @@ USt-IdNr.	DE317198791</p>
             <p>By submitting the application to us, the applicants agree to the processing of their data for the purposes of the application process in accordance with the nature and scope set forth in this Privacy Policy.</p><br>
             <p>Insofar as special categories of personal data within the meaning of Art. 9 (1) GDPR are voluntarily communicated within the framework of the application procedure, their processing is additionally carried out in accordance with Art. 9 (2) lit. b DSGVO (eg health data, such as disability or ethnic origin). Insofar as special categories of personal data within the meaning of Art. 9 (1) GDPR are requested from applicants in the context of the application process, their processing is additionally carried out in accordance with Art. 9 para. 2 lit. a GDPR (eg health data, if necessary for the profession).</p><br>
             <p>If provided, applicants can submit their applications via our online form on our website. The data will be encrypted and transmitted to us according to the state of the art.
-            Furthermore, applicants can send us their applications via e-mail. However, please note that e-mails are generally not sent encrypted and that applicants themselves must provide encryption. We can therefore take no responsibility for the transmission of the application between the sender and the reception on our server and therefore recommend rather to use an online form or the postal delivery. Because instead of applying via the online form and e-mail, applicants still have the opportunity to send us the application by post.</p><br>
+                Furthermore, applicants can send us their applications via e-mail. However, please note that e-mails are generally not sent encrypted and that applicants themselves must provide encryption. We can therefore take no responsibility for the transmission of the application between the sender and the reception on our server and therefore recommend rather to use an online form or the postal delivery. Because instead of applying via the online form and e-mail, applicants still have the opportunity to send us the application by post.</p><br>
             <p>The data provided by the applicants may be further processed by us in the event of a successful application for employment purposes. Otherwise, if the application for a job offer is not successful, the applicants' data will be deleted. Applicants' data will also be deleted if an application is withdrawn, which the applicants are entitled to do at any time.</p><br>
             <p>The cancellation is subject to a legitimate withdrawal of the candidates, after the expiration of a period of six months, so that we can answer any follow-up questions to the application and meet our proof obligations under the Equal Treatment Act. Invoices for any reimbursement of travel expenses are archived in accordance with tax regulations.</p>
         </div>
@@ -192,7 +193,7 @@ USt-IdNr.	DE317198791</p>
             <p>Google is certified under the Privacy Shield Agreement, which provides a guarantee to comply with European privacy legislation ( https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active ).</p><br>
             <p>Google will use this information on our behalf to evaluate the use of our online offer by users, to compile reports on the activities within this online offering and to provide us with further services related to the use of this online offer and the internet usage. In this case, pseudonymous user profiles of the processed data can be created.</p><br>
             <p>We only use Google Analytics with activated IP anonymization. This means that the IP address of the users is shortened by Google within member states of the European Union or in other contracting states of the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be sent to a Google server in the US and shortened there.</p><br>
-            <p>The IP address submitted by the user's browser will not be merged with other data provided by Google. Users can prevent the storage of cookies by setting their browser software accordingly; Users may also prevent the collection by Google of the data generated by the cookie and related to their use of the online offer as well as the processing of such data by Google by downloading and installing the browser plug-in available under the following link:  http: // tools .google.com / dlpage / gaoptout? hl = DE .</p><br>
+            <p>The IP address submitted by the user's browser will not be merged with other data provided by Google. Users can prevent the storage of cookies by setting their browser software accordingly; Users may also prevent the collection by Google of the data generated by the cookie and related to their use of the online offer as well as the processing of such data by Google by downloading and installing the browser plug-in available under the following link: http: // tools .google.com / dlpage / gaoptout? hl = DE .</p><br>
             <p>For more information about Google's data usage, hiring and disparaging options, please read Google's Privacy Policy ( https://policies.google.com/technologies/ads ) and Google's Ads Ads Settings (https: // adssettings.google.com/authenticated ).</p><br>
             <p>The personal data of users will be deleted or anonymized after 14 months.</p>
         </div>
@@ -238,12 +239,12 @@ USt-IdNr.	DE317198791</p>
             <p>For a detailed description of the respective processing and the possibilities of contradiction (opt-out), we refer to the following linked information of the provider.</p><br>
             <p>Also in the case of requests for information and the assertion of user rights, we point out that these can be claimed most effectively from the providers. Only the providers have access to the data of the users and can directly take appropriate measures and provide information. If you still need help, then you can contact us.</p><br>
             <p>- Facebook (Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbor, Dublin 2, Ireland) - Privacy Policy: https://www.facebook.com/about/privacy/ , opt-out: https: // www. facebook.com/settings?tab=ads and http://www.youronlinechoices.com , Privacy Shield: https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active .</p><br>
-            <p>- Google / YouTube (Google LLC, 1600 Amphitheater Parkway, Mountain View, CA 94043, USA) - Privacy Policy:   https://policies.google.com/privacy , opt-out: https://adssettings.google.com/authenticated , Privacy Shield: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active .</p><br>
+            <p>- Google / YouTube (Google LLC, 1600 Amphitheater Parkway, Mountain View, CA 94043, USA) - Privacy Policy: https://policies.google.com/privacy , opt-out: https://adssettings.google.com/authenticated , Privacy Shield: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active .</p><br>
             <p>- Instagram (Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA) - Privacy Policy / Opt-Out: http://instagram.com/about/legal/privacy/ .</p><br>
             <p>- Twitter (Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA) - Privacy Policy: https://twitter.com/privacy , opt-out: https://twitter.com/personalization , Privacy Shield: https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active .</p><br>
             <p>- Pinterest (Pinterest Inc., 635 High Street, Palo Alto, CA, 94301, USA) - Privacy Policy / Opt-Out: https://about.pinterest.com/en/privacy-policy .</p><br>
             <p>- LinkedIn (LinkedIn Ireland Unlimited Company Wilton Place, Dublin 2, Ireland)</p><br>
-            <p>- Privacy Policy https://www.linkedin.com/legal/privacy-policy , opt-out: https://www.linkedin.com/psettings/guest -controls / retargeting-opt-out , Privacy Shield:  https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&status=Active .</p><br>
+            <p>- Privacy Policy https://www.linkedin.com/legal/privacy-policy , opt-out: https://www.linkedin.com/psettings/guest -controls / retargeting-opt-out , Privacy Shield: https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&status=Active .</p><br>
             <p>- Xing (XING AG, Dammtorstrasse 29-32, 20354 Hamburg, Germany) - Privacy Policy / Opt-Out: https://privacy.xing.com/de/datenschutzerklaerung .</p><br>
             <p>- Wakalet (Wakelet Limited, 76 Quay Street, Manchester, M3 4PR, United Kingdom) </p><br>
             <p>- Privacy Policy / Opt-Out: https://wakelet.com/privacy.html .</p><br>
