@@ -27,7 +27,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <script src='https://cdn.jsdelivr.net/npm/jtsage-datebox-bootstrap4@5.3.3/jtsage-datebox.min.js'></script>
 <!-- investment profit calculator-->
 <script src="<?= base_url('assets/js/investment-profit-calculator.js'); ?>"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- sweetalert -->
+<script src="<?= base_url('public/plugins/sweetalert/dist/sweetalert.min.js'); ?>"></script>
 <!-- main -->
 <script src="<?= base_url('assets/js/main.js'); ?>"></script>
 <!-- custom -->

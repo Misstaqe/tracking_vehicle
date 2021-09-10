@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>" />
     <!-- responsive -->
     <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>" />
+    <!-- sweetalert -->
+    <link rel="stylesheet" href="<?= base_url('public/plugins/sweetalert/dist/sweetalert.css'); ?>">
     <!-- custom css -->
     <link rel="stylesheet" href="<?= base_url('public/css/custom.css'); ?>" />
 </head>

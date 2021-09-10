@@ -9388,7 +9388,11 @@ $(document).ready(function () {
 			$b_postal_code == "" ||
 			$b_phone == ""
 		) {
-			window.alert("ERROR. Please input all fields correctly.");
+			sweetAlert(
+				"Oops...",
+				"ERROR. Please input all fields correctly.",
+				"error"
+			);
 		} else {
 			$(".stages-container").slick("slickNext");
 		}
@@ -9400,16 +9404,7 @@ $(document).ready(function () {
 		var pinThe = $('[data-response="' + choice + '"]').data("id");
 		var pinEnter = $("#pin").val();
 
-		if (pinThe != pinEnter) {
-			// sweetAlert(
-			// 	"Oops...",
-			// 	"Something went wrong! That Pin doesn't match our records",
-			// 	"error"
-			// );
-			window.alert(
-				"Oops... Something went wrong! That Pin doesn't match our records"
-			);
-		} else if (pinThe == pinEnter) {
+		if (pinThe == pinEnter) {
 			// close 'confirm pin' modal
 			$("#modalConfirmPin").modal("hide");
 
@@ -9420,17 +9415,14 @@ $(document).ready(function () {
 				dataType: "html",
 				success: function () {
 					if (choice == "approve") {
-						// swal(
-						// 	"Transaction Approved!",
-						// 	"Please continue and select your delivery address",
-						// 	"success"
-						// );
-						window.alert(
-							"Transaction Approved! Please continue and select your delivery address"
+						swal(
+							"Transaction Approved!",
+							"Please continue and select your delivery address",
+							"success"
 						);
-						// var htmlContent =
-						// 	'<span class="label success"><i class="fa fa-check"></i> Approved</span>';
-						// $("#client_reply").html(htmlContent);
+						var htmlContent =
+							'<span class="label success"><i class="fa fa-check"></i> Approved</span>';
+						$("#client_reply").html(htmlContent);
 						$(".stages-container").slick("slickNext");
 					} else {
 						swal(
@@ -9460,12 +9452,19 @@ $(document).ready(function () {
 					$("#viewTracking").attr("href", viewTracking + "/" + refNumber);
 				},
 				error: function () {
-					window.alert("ERROR. Please input all fields correctly.");
+					sweetAlert(
+						"Oops...",
+						"ERROR. Please input all fields correctly.",
+						"error"
+					);
 				},
 			});
 		} else {
-			// $(".form-error").html("PLEASE ENTER A VALID PIN").show();
-			window.alert("PLEASE ENTER A VALID PIN");
+			sweetAlert(
+				"Oops...",
+				"Something went wrong! That Pin doesn't match our records",
+				"error"
+			);
 		}
 	});
 });
