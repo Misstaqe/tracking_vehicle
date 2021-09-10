@@ -1169,7 +1169,7 @@ class Action extends CI_Controller
         $data['title'] = 'Tracking ' . WEBSITE_NAME;
         $data['footer'] = $this->lang->line('footer');
         $data['link'] = $this->lang->line('link');
-        $data['mainContent'] = 'transaction/new-view';
+        $data['mainContent'] = 'transaction/details';
 
         $this->load->view('layout/template', $data);
     }
