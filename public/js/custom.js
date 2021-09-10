@@ -9370,6 +9370,7 @@ $(document).ready(function () {
 
 	$(".go-ahead").on("click", function (e) {
 		e.preventDefault();
+
 		$b_name = $("#b_name").val();
 		$b_email = $("#b_email").val();
 		$b_address = $("#b_address").val();
@@ -9395,10 +9396,10 @@ $(document).ready(function () {
 
 	$(".ajax-submit").on("click", function (e) {
 		e.preventDefault();
+
 		var pinThe = $('[data-response="' + choice + '"]').data("id");
 		var pinEnter = $("#pin").val();
-		console.log("pinThe", pinThe);
-		console.log("pinEnter", pinEnter);
+
 		if (pinThe != pinEnter) {
 			// sweetAlert(
 			// 	"Oops...",

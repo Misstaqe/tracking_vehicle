@@ -1146,9 +1146,9 @@ class Action extends CI_Controller
 
         $pdfFilePath = "invoice/TREUHANDVERTRAG_" . $_POST["reference"] . ".pdf";
 
-        $this->load->library('m_pdf');
-        $this->m_pdf->pdf->WriteHTML($pdf_html);
-        $this->m_pdf->pdf->Output($pdfFilePath, "F");
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf->WriteHTML($pdf_html);
+        $mpdf->Output($pdfFilePath, "F");
 
         // send invoice to buyer
         $this->load->library('email');
@@ -1193,7 +1193,6 @@ class Action extends CI_Controller
     public function print_invoice($reference)
     {
         $this->load->model('transaction_model');
-
         $transaction = $this->transaction_model->get_transaction($reference);
 
         $data["transaction"] = $transaction;
@@ -1212,9 +1211,10 @@ class Action extends CI_Controller
         $data["final_date"] = $final_date;
 
         $html = $this->load->view('transaction/invoice_template', $data, true);
-        $this->load->library('m_pdf');
-        $this->m_pdf->pdf->WriteHTML($html);
-        $this->m_pdf->pdf->Output('TREUHANDVERTRAG_' . $reference . '.pdf', "D");
+
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf->WriteHTML($html);
+        $mpdf->Output('TREUHANDVERTRAG_' . $reference . '.pdf', "D");
     }
 
     public function test()
