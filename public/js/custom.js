@@ -9289,15 +9289,16 @@ $(document).ready(function () {
 						type: "post",
 						dataType: "html",
 						success: function () {
-							$("#" + id)
-								.html('<i class="fa fa-cog"></i> Reset')
-								.closest("tr")
-								.children(".status")
-								.html(
-									'<span class="label warning">' +
-										'<i class="fa fa-clock-o"></i> Pending' +
-										"</span>"
-								);
+							window.location.reload();
+							// $("#" + id)
+							// 	.html('<i class="fa fa-cog"></i> Reset')
+							// 	.closest("tr")
+							// 	.children(".status")
+							// 	.html(
+							// 		'<span class="label warning">' +
+							// 			'<i class="fa fa-clock-o"></i> Pending' +
+							// 			"</span>"
+							// 	);
 						},
 						error: function () {
 							$("#" + id)
