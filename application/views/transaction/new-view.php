@@ -324,32 +324,6 @@ if ($transaction[0]->ip_address != "") {
                         </div>
                     </div>
 
-                    <div class="reveal" id="exampleModal2" data-reveal>
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <h4>Edit Delivery Address:</h4>
-                                <label for="b_address">Old Address:
-                                    <?php
-                                    $b_address = array('name' => 'b_address', 'id' => 'b_address', 'type' => 'text', 'required' => '', 'disabled' => 'disabled', 'value' => $transaction[0]->b_address);
-                                    echo form_input($b_address); ?>
-                                </label>
-                                <label for="b_address">New Address:
-                                    <?php
-                                    $b_address = array('name' => 'b_address', 'id' => 'b_address', 'type' => 'text', 'required' => '', 'value' => '');
-                                    echo form_input($b_address); ?>
-                                </label>
-                            </div>
-                            <div class="small-12 columns">
-                                <a href="#" class="button success float-right"><i class="fa fa-check"></i>
-                                    Confirm Address
-                                </a>
-                            </div>
-                        </div>
-                        <button class="close-button" data-close aria-label="Close reveal" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
                 <?php else : ?>
                     <div class="callout warning" data-closable>
                         <p class="lead">An error occurred when trying to get your transaction. Please try again</p>
