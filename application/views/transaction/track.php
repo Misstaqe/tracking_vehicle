@@ -1,87 +1,97 @@
 <?php
-/**
- * Developer: Makhmudov J.
- * Date: 10/01/2018
- * Email: applepopov803@gmail.com
- */
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 
-<section class="home_banner_area banner-area">
-    <div class="banner_inner d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="banner_content d-flex flex-md-row flex-column">
-                        <div class="banner-left text-md-right">
-                            <h1 class="text-uppercase" style="color: #ffffff;">Track your vehicle</h1>
-                        </div>
-                        <div class="banner-right position-relative">
-                            <?php $form_attr = array('class' => 'tracking-form', 'data-abide' => '', 'novalidate' => ''); ?>
-                            <?php echo form_open('track/submit', $form_attr); ?>
-                            <p style="margin-bottom: 10px;">
-                                Please input tracking number to track your vehicle quickly.
-                            </p>
-                            <div data-abide-error class="alert callout" style="display: none;">
-                                <p><span class="fa fa-exclamation-circle" aria-hidden="true"></span>
-                                        Please fill in the tracking number</p>
-                            </div>
-                            <input type="text" name="tracking" class="txt input-group-field form-control" id="tracking" placeholder="EX123456" required="">
-                            <button type="submit" class="main_btn mt-md-0 mt-4" href="#">Track</button>
-                            <?php echo form_close(); ?>
-                        </div>
-                    </div>
+<!-- breadcrumb begin -->
+<div class="breadcrumb-oitila">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-8">
+                <div class="part-txt">
+                    <h1>track your vehicle</h1>
+                    <ul>
+                        <li>home</li>
+                        <li>track your vehicle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
+                <div class="part-img">
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+<!-- breadcrumb end -->
 
-
-
-<div class="whole-wrap" style="margin-bottom: 120px;">
+<!-- account begin -->
+<div class="user-dashboard">
     <div class="container">
-        <div class="section-top-border">
-
-<?php if (isset($contact_errors)) echo $contact_errors; ?>
-<?php if ($this->uri->segment(3) && $this->uri->segment(3) == 'success'): ?>
-    <div class="success">
-        Email sent!
-    </div>
-<?php endif; ?>
-
-<?php echo form_open('action/send_email', array('id' => 'contact-form','data-abide' => '', 'novalidate' => '')) ?>
-<div class="row">
-    <h3 class="mb-30 title_color">Having trouble? Let us know and we will help</h3>
-    <div class="col-lg-8 col-md-8 col-sm-12">
-        <div class="mt-10">
-            <input type="text" name="name" id="name" placeholder="Please enter your name here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please enter your name here'"
-             required="Please enter your name here" class="single-input">
+        <div class="row">
+            <?php if (isset($contact_errors)) echo $contact_errors; ?>
+            <?php if ($this->uri->segment(3) && $this->uri->segment(3) == 'success') : ?>
+                <div class="success">
+                    Email sent!
+                </div>
+            <?php endif; ?>
         </div>
-        <div class="mt-10">
-            <input type="email" name="email" id="email" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-             required="Please enter your email here" class="single-input">
-        </div>
-        <div class="input-group-icon mt-10">
-            <div class="icon">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5">
+                <h3 class="title">
+                    Track Your Transaction
+                </h3>
+                <div class="add-credit-card card">
+                    <div class="card-body">
+                        <?php
+                        $form_attr = array('class' => 'tracking-form', 'data-abide' => '', 'novalidate' => '');
+                        echo form_open('track/submit', $form_attr);
+                        ?>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="tracking">Please input tracking number to track your vehicle quickly.</label>
+                                    <input type="text" name="tracking" class="form-control" id="tracking" placeholder="EX123456" required />
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-hyipox-medium btn-add-new-card">Track</button>
+                        <?php echo form_close(); ?>
+                    </div>
+                </div>
             </div>
-            <input type="tel" name="phone" id="phone" placeholder="Please enter your phone number here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please enter your phone number here'"
-             required="Please enter your phone number" class="single-input">
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="mt-10">
-            <textarea name="message" id="message" class="single-textarea" style="height: 140px;" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"
-             required></textarea>
-        </div>
-    </div>
-    <div class="col-sm-12 mt-10">
-        <button type="submit" value="send" class="genric-btn info radius float-right">SEND ENQUIRY</button>
-    </div>
-</div>
-<?php echo form_close(); ?>
-        
-        </div>
-    </div>
-</div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+                <?php echo form_open('action/send_email', array('id' => 'contact-form', 'data-abide' => '', 'novalidate' => '')); ?>
+                <h3 class="title">
+                    Having trouble? Let us know and we will help
+                </h3>
+                <div class="last-step">
+                    <div>
+                        <div class="form-group">
+                            <label for="name">Enter Your Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please enter your name here'" required />
+                        </div>
 
+                        <div class="form-group">
+                            <label for="email">Enter Your Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Enter Your Phone Number</label>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please enter your phone number here'" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Enter Your Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="finish-button">
+                    <button type="submit" value="send" class="btn-hyipox-2">SEND ENQUIRY</button>
+                </div>
+                <?php echo form_close(); ?>
+            </div>
+        </div>
+    </div>
+</div>
