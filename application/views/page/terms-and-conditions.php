@@ -17,7 +17,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
             <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
                 <div class="part-img">
-                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
                 </div>
             </div>
         </div>

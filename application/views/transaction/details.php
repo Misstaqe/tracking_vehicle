@@ -17,7 +17,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
             <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
                 <div class="part-img">
-                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
                 </div>
             </div>
         </div>
@@ -37,7 +36,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div class="row no-gutters">
                                     <div class="col-xl-4 col-lg-4 col-md-4">
                                         <div class="player-card">
-                                            <div class="part-pic">
+                                            <div class="part-pic transaction_owner_pic">
                                                 <?php
                                                 $url = 'public/img/agencies/' . $transaction[0]->b_detail_1_2 . '.jpg';
                                                 ?>

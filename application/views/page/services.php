@@ -17,7 +17,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
                 <div class="part-img">
-                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
                 </div>
             </div>
         </div>
@@ -31,17 +30,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h2><span class="special">Our Services</span></h2>
             <p>
                 We understand your concerns about your valuable vehicles whether it is of an extraordinary high material or sentimental value for you. Draw on our long standing experience and benefit from the know-how of our staff. Following this we take care for an ideal and smooth transport process. Accordingly we also will inform you about possible alternatives that are at your disposal.<br>
-                <p class="static_special">Intermediary services this is HOW OUR SYSTEM WORKS!</p>
-                If you want to buy a used car, it is a huge expense. If you buy a car online, the element of risk is increased. <span class="spc">This is where we are here to help.</span>
+                <p class="static_special">Brokerage Intermediary services.</p>
+                <p class="static_special">This is HOW OUR SYSTEM WORKS!</p>
+        If you want to buy a used car, it is a huge expense. If you buy a car online, the element of risk is increased. <span class="spc">This is where we are here to help.</span>
             </p>
             <ul>
-                <li><i class="fas fa-check"></i> The standard chunk of Lorem Ipsum used since </li>
-                <li><i class="fas fa-check"></i> reproduced below for those interested. Sections </li>
-                <li><i class="fas fa-check"></i> de Finibus Bonorum et Malorum" by Cicero are also </li>
-                <li><i class="fas fa-check"></i> reproduced in their exact original form</li>
+                <li><i class="fas fa-check"></i> First step: Agree to the terms and conditions and use our online platform to start the transaction. </li>
+                <li><i class="fas fa-check"></i>Second step: The Buyer will pay by bank transfer the price of the vehicle to our payment agent bank account. Each transaction is processed by an Individual Payment Agent which will assist your transaction.                </li>
+                <li><i class="fas fa-check"></i>Third step: We locate an transport partner for your transaction and we collect the vehicle from the Seller location or from any location in Europe and start the transport to the Buyer desired location.<br />
+                </li>
+                <li><i class="fas fa-check"></i>Forth step: Delivery is finished and the Buyer will start the inspection period. During the inspection period the Buyer can ACCEPT or decline to keep the vehicle. In case the Buyer refuses to keep the vehicle the full amount will be transferred to his bank account by our payment agent. The Buyer is not legally binded to keep the vehicle even though he already transferred the price of the vehicle.</li>
+                <li><i class="fas fa-check"></i>Fifth step: We will transfer the money to the Seller once the Buyer has agreed to keep the vehicle and the documents are signed.<br />
+                </li>
             </ul>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-        </div>
+          <p>&nbsp;</p>
+      </div>
     </div>
 </div>
 
@@ -136,80 +139,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- services end -->
 
-<!-- team begin -->
-<div class="team">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-8">
-                <div class="section-title">
-                    <span class="sub-title">
-                        Uppermost Investments
-                    </span>
-                    <h2>
-                        Meet with our<span class="special">  Top Investors</span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="single-member">
-                    <div class="img-box">
-                        <div class="part-img">
-                            <a href="<?= base_url('site/contact'); ?>" class="view-btn">
-                                <i class="far fa-eye"></i>
-                            </a>
-                            <img src="<?= base_url('public/img/feature/f2.png'); ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="part-text">
-                        <span class="name">In good hands</span>
-                        <span class="invested-amount">Our company transports over 600 vehicles every year throughout Europe.</span>
-                        <div class="paid-from">
-                            CONTACT US
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="single-member">
-                    <div class="img-box">
-                        <div class="part-img">
-                            <a href="<?= base_url('site/contact'); ?>" class="view-btn">
-                                <i class="far fa-eye"></i>
-                            </a>
-                            <img src="<?= base_url('public/img/feature/f1.png'); ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="part-text">
-                        <span class="name">Fast and trusted</span>
-                        <span class="invested-amount">Transporting automobiles punctually and safely.</span>
-                        <div class="paid-from">
-                            CONTACT US
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="single-member">
-                    <div class="img-box">
-                        <div class="part-img">
-                            <a href="<?= base_url('site/contact'); ?>" class="view-btn">
-                                <i class="far fa-eye"></i>
-                            </a>
-                            <img src="<?= base_url('public/img/feature/f3.png'); ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="part-text">
-                        <span class="name">Easy and comfortable</span>
-                        <span class="invested-amount">We will be happy to advise you. Just send us an email or give us a call.</span>
-                        <div class="paid-from">
-                            CONTACT US
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- team end -->

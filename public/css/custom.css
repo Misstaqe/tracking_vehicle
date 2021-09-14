@@ -27,3 +27,7 @@ table tbody tr td.sorting_1 a {
 	width: 250px !important;
 	float: right;
 }
+.transaction_owner_pic {
+    max-width: 150px;
+    margin: 0 auto;
+}

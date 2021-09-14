@@ -8,9 +8,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="row justify-content-xl-between justify-content-lg-between justify-content-md-center justify-content-sm-center">
             <div class="col-xl-7 col-lg-7 col-sm-10 col-md-9 d-xl-flex d-lg-flex d-block align-items-center d-banner-tamim">
                 <div class="banner-content">
-                    <h4>Want to Invest Money?</h4>
+                    <h4>Want to have a safe transaction?</h4>
                     <h1>We're delivering your happiness carefully</h1>
-                    <p>We Already Completed Our 50+ Years in Online Investment Business<br /> With Trust and Excellent Reputation.</p>
+                    <p>We Already Completed Our 2+ Years in Online Transaction Business<br /> With Trust and Excellent Reputation.</p>
                     <a href="#" class="btn-hyipox">Start Tracking Now</a>
                 </div>
                 <div class="banner-statics">
@@ -28,16 +28,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <img src="<?= base_url('assets/img/svg/user.svg'); ?>" alt="">
                         </div>
                         <div class="part-text">
-                            <span class="text">Online Users</span>
-                            <span class="number">50257.001+</span>
-                        </div>
-                    </div>
+                            <span class="text">Online Clients</span>
+                            <span class="number">1257+</span>                        </div>
+                  </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5 col-sm-10 col-md-8 monitor-for-480">
                 <div class="profit-calculator">
                     <div class="calc-header">
-                        <h3 class="title">Track <span class="special"> Your Vehicle</span></h3>
+                        <h3 class="title">Track <span class="special"> Your Transaction</span></h3>
                     </div>
                     <div class="calc-body">
                         <div class="part-amount" style="margin-bottom: 0;">
@@ -123,9 +122,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <img src="<?= base_url('assets/img/svg/coin.svg'); ?>" alt="">
                         </div>
                         <div class="part-text">
-                            <h4 class="title">Invest Money</h4>
-                            <p>Choose your investment plan and make first deposit</p>
-                        </div>
+                            <h4 class="title">Save Money</h4>
+                            <p>Low fees and reasonable transportation costs</p>
+                      </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
@@ -134,8 +133,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <img src="<?= base_url('assets/img/svg/money-bag.svg'); ?>" alt="">
                         </div>
                         <div class="part-text">
-                            <h4 class="title">Get Withdraw</h4>
-                            <p>Request for the withdrawal and receive a payment</p>
+                            <h4 class="title">Secure Payments</h4>
+                            <p>No CASH Payments. Only secure bank transfers</p>
                         </div>
                     </div>
                 </div>
@@ -240,9 +239,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
                             </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/bitcoin.svg'); ?>" alt="">
-                            </div>
                         </div>
                         <div class="single-transaction">
                             <div class="flag">
@@ -254,9 +250,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
                             </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/ethereum.svg'); ?>" alt="">
-                            </div>
                         </div>
                         <div class="single-transaction">
                             <div class="flag">
@@ -267,9 +260,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-type">Trxn: Witdraw</span>
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
-                            </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/litecoin.svg'); ?>" alt="">
                             </div>
                         </div>
                         <div class="single-transaction">
@@ -282,9 +272,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
                             </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/bitcoin.svg'); ?>" alt="">
-                            </div>
                         </div>
                         <div class="single-transaction">
                             <div class="flag">
@@ -296,9 +283,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
                             </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/ethereum.svg'); ?>" alt="">
-                            </div>
                         </div>
                         <div class="single-transaction">
                             <div class="flag">
@@ -309,9 +293,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <span class="tr-type">Trxn: Witdraw</span>
                                 <span class="tr-date">/ 08.13.2020</span>
                                 <span class="tr-amount">$209.00</span>
-                            </div>
-                            <div class="coin">
-                                <img src="<?= base_url('assets/img/svg/litecoin.svg'); ?>" alt="">
                             </div>
                         </div>
                     </div>
@@ -394,7 +375,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-xl-4 col-lg-2 d-xl-flex d-lg-none d-block align-items-end">
                 <div class="part-img">
                     <div class="shadow-shape"></div>
-                    <img src="<?= base_url('assets/img/choosing-reason.png'); ?>" alt="">
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5 col-sm-10 col-md-12">
@@ -469,8 +449,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <img src="<?= base_url('assets/img/services/open_transport.jpg'); ?>" alt="">
                         <a href="#"><i class="far fa-eye"></i></a>
                         <div class="post-date">
-                            <span class="date">26</span>
-                            <span class="month">JAn</span>
+                            <span class="date">1</span><span class="month"></span>
                         </div>
                     </div>
                     <div class="part-text">
@@ -486,8 +465,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <img src="<?= base_url('assets/img/services/1.gif'); ?>" alt="">
                         <a href="#"><i class="far fa-eye"></i></a>
                         <div class="post-date">
-                            <span class="date">26</span>
-                            <span class="month">JAn</span>
+                            <span class="date">2</span><span class="month"></span>
                         </div>
                     </div>
                     <div class="part-text">
@@ -503,16 +481,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <img src="<?= base_url('assets/img/services/enclosed_transport.jpg'); ?>" alt="">
                         <a href="#"><i class="far fa-eye"></i></a>
                         <div class="post-date">
-                            <span class="date">26</span>
-                            <span class="month">JAn</span>
+                            <span class="date">3</span><span class="month"></span>
                         </div>
                     </div>
                     <div class="part-text">
-                        <a href="#" class="title">Enclosed Transport</a>
-                        <p>State-of-the-art closed trailers Our trailers have an opening angle of 3 degrees for vehicles with particularly low ground clearance.</p>
+                        <a href="#" class="title">Brokerage services</a>
+                        <p>Our main duty is to act as a middleman that connects buyers and sellers to facilitate a transaction.</p>
                         <a href="#" class="share-btn"><i class="fas fa-share-alt"></i></a>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
@@ -526,18 +503,19 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="row justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-center">
                 <div class="col-xl-7 col-lg-7 col-md-12 col-sm-10 d-xl-flex d-lg-flex d-block align-items-center">
                     <div class="cta-text">
-                        <h2>We're Always Thinking Something Different</h2>
-                        <p>Quis nostrud exercitation ullamco laboris nisi utaliquip commodo consequat. Duis aute feeirure dolor voluptate velit esse cillum dolore eu fugiat nulla exercitation ullamco laboris nisi utaliquip commodo consequat. Duis aute feeirure </p>
-                        <p class="marked">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nemo quasi impedit, voluptatem quae voluptas numquam unde dolor!</p>
-                        <a href="#" class="btn-hyipox-medium cta-btn">Start Tracking</a>
+                        <h1>COVID-19 transport measures</h1>
+                        <p>We have closed our office and offer Online Support.</p>
+                        <p>At the same time, we will do everything we can to keep the risk of infection as low as possible for everyone involved our employees, our clients and partners. In order to protect our staff, customers, partners and drivers as much as possible, the following guidelines have been carried out:</p>
+                        <p> NO cash payments. We accept only payments by bank transfer.<br />
+                          Our agents are provided with security equipment and hand disinfection whenever possible.<br />
+                          Our agents are instructed to avoid close human contact and encouraged to wash hands frequently.<br />
+                          Our employees are strictly instructed to stay home, if any sign of sickness appears.<br />
+                          We avoid manually exchange of transport documents by using electronic solutions.</p>
                     </div>
-                </div>
+              </div>
                 <div class="col-xl-4 col-lg-4 d-xl-flex d-lg-flex justify-content-end d-block align-items-center">
-                    <div class="part-video">
-                        <img src="<?= base_url('assets/img/video.jpg'); ?>" alt="">
-                        <button data-video-id="L61p2uyiMSo" class="play-video js-video-button"><i class="fas fa-play"></i></button>
-                    </div>
-                </div>
+                    <div class="part-video"></div>
+              </div>
             </div>
         </div>
     </div>

@@ -17,7 +17,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
             <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
                 <div class="part-img">
-                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
                 </div>
             </div>
         </div>
@@ -40,16 +39,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="lower-content">
                     <h2>Responsible</h2>
                     <p><?= WEBSITE_NAME; ?></p>
-                    <p>Am Bahndamm 17</p>
-                    <p>54338 Schweich </p>
+                    <p>Bahnhofstr. 67</p>
+                    <p>35708 Haiger</p>
                 </div>
 
                 <br>
                 <!-- Lower Content -->
                 <div class="lower-content">
                     <p><?= WEBSITE_NAME; ?></p>
-                    <p>HR-Nr. HRB 44199
-                        USt-IdNr. DE317198791</p>
+                    <p>HR-Nr. HRB 7644
+                        USt-IdNr. DE76447644</p>
                 </div>
 
                 <!-- Lower Content -->

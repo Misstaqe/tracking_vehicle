@@ -170,7 +170,7 @@ $this->load->view('layout/header.php'); ?>
                             <a href="<?= base_url(); ?>" class="logo">
                                 <img src="<?= base_url('assets/img/logo.png'); ?>" alt="">
                             </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi ut illum. Cumque, unde suscipit error!</p>
+                            <p>Akos Trans GmbH brokerage services and transport solutions!</p>
                             <div class="social-links">
                                 <ul>
                                     <li>
@@ -242,7 +242,7 @@ $this->load->view('layout/header.php'); ?>
                                     Subscribe
                                 </button>
                             </form>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus labore recusandae! Quia sint consectetur explicabo.</p>
+                            <p>Subscribe to receive news and updates of our services.</p>
                         </div>
                     </div>
                 </div>
@@ -252,7 +252,7 @@ $this->load->view('layout/header.php'); ?>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-8">
-                        <p>Copyright © <a href="<?= base_url(); ?>"><?= WEBSITE_NAME; ?></a> - 2020. All Rights Reserved</p>
+                        <p>Copyright © <a href="<?= base_url(); ?>"><?= WEBSITE_NAME; ?></a> - 2021. All Rights Reserved</p>
                     </div>
                 </div>
             </div>

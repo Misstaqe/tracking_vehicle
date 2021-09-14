@@ -9,7 +9,7 @@
 			<strong>Ihre Rechnung</strong>
 		</div>
 		<div style="text-align: right; float: right; width: 50%;">
-			<img src="<?= base_url('public/img/logo.png'); ?>" style="width: auto; height: 70px; margin-top: -40px;">
+			<img src="<?= base_url('assets/img/logo.png'); ?>" style="width: auto; height: 70px; margin-top: -40px;">
 		</div>
 	</div>
 
@@ -124,10 +124,10 @@
 			<?= WEBSITE_NAME; ?><br>
 			Bahnhofstr. 67<br>
 			35708 Haiger<br>
-			Germany<br>
+			Deutschland<br>
 		</div>
 		<div style="width: 30%; float: left;">
-			USt-IdNr. DE317198791<br>
+			USt-IdNr. DE76447644<br>
 			Tel: <?= WEBSITE_PHONE; ?><br>
 			Fax: <?= WEBSITE_PHONE; ?><br>
 			Email: <?= WEBSITE_EMAIL; ?><br>
@@ -147,7 +147,7 @@
 			<strong>für die <?= WEBSITE_NAME; ?></strong>
 		</div>
 		<div style="text-align: right; float: right; width: 50%;">
-			<img src="<?= base_url('public/img/logo.png'); ?>" style="width: auto; height: 70px; margin-top: -40px;">
+			<img src="<?= base_url('assets/img/logo.png'); ?>" style="width: auto; height: 70px; margin-top: -40px;">
 		</div>
 	</div>
 
@@ -237,10 +237,10 @@
 						<?= WEBSITE_NAME; ?><br>
 						Bahnhofstr. 67<br>
 						35708 Haiger<br>
-						Germany<br>
+						Deutschland<br>
 					</div>
 					<div style="width: 30%; float: left;">
-						USt-IdNr. DE317198791<br>
+						USt-IdNr. DE76447644<br>
 						Tel: <?= WEBSITE_PHONE; ?><br>
 						Fax: <?= WEBSITE_PHONE; ?><br>
 						Email: <?= WEBSITE_EMAIL; ?><br>

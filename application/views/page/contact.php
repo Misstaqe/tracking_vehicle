@@ -17,7 +17,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
                 <div class="part-img">
-                    <img src="<?= base_url('assets/img/breadcrumb-img.png'); ?>" alt="image">
                 </div>
             </div>
         </div>
@@ -58,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="addressing">
                             <div class="single-address">
                                 <h4>Our Office</h4>
-                                <p><?= WEBSITE_ADDRESS; ?></p>
+                                <p>Haiger, Germany</p>
                             </div>
                             <div class="single-address">
                                 <h4>Email</h4>
@@ -79,6 +78,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- map begin -->
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429269.42211006227!2d-97.56951529779923!3d32.801078234321494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6e122dc807ad%3A0xa4af8bf8dd69acbd!2sFort%20Worth%2C%20TX%2C%20USA!5e0!3m2!1sen!2sbd!4v1602530476004!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80742.25346205797!2d8.142749580044176!3d50.77195087851109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc168f6cec0ee5%3A0x1c224353694aa800!2s35708%20Haiger%2C%20Deutschland!5e0!3m2!1sde!2sro!4v1631543598214!5m2!1sde!2sro" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 <!-- map end -->

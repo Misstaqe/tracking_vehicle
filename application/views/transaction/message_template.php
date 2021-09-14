@@ -82,11 +82,11 @@
     Diese Nachricht wurde automatisch übersetzt mit Google Translate. Entschuldigen Sie für die Grammatik oder Rechtschreibung Fehler.<br>
     ------------------------------------------------------- <br>
     <?= WEBSITE_NAME; ?><br>
-    USt-IdNr. DE317198791<br>
-    HR-Nr. HRB 44199<br>
+    USt-IdNr. DE76447644<br>
+    HR-Nr. HRB 7644<br>
     Tel: <?= WEBSITE_PHONE; ?><br>
     Fax: <?= WEBSITE_PHONE; ?><br>
-    Vehicle escrow, transport services and more!<br>
+    Brokerage services, transport services and more!<br>
     <br>
   </p>
 </body>
